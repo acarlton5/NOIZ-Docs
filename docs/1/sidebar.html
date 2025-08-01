@@ -1,10 +1,114 @@
 <aside class="sidebar overflow-auto lg:!sticky lg:!top-[95px] lg:max-h-[calc(100vh-100px)] lg:!w-full lg:!py-10 lg:!pr-[46px]">
-  <ul class="sidebar-list space-y-2">
-    <li><a href="#before-you-begin">Before You Begin</a></li>
-    <li><a href="#register-new">Registering a New NOIZ Account</a></li>
-    <li><a href="#connect-existing">Connecting to an Existing NOIZ Account</a></li>
-    <li><a href="#constellation-auth">How Constellation Handles Authentication</a></li>
-    <li><a href="#verify-identity">Verifying Your Identity</a></li>
-    <li><a href="#common-questions">Common Questions &amp; Troubleshooting</a></li>
+  <form class="border-border mb-10 hidden w-full justify-between rounded-xl border sm:rounded-2xl lg:flex">
+    <input type="search" class="font-secondary placeholder:text-text/50 w-full border-0 bg-transparent p-3 pl-6 pr-0 placeholder:text-sm focus:border-0 focus:ring-0" data-target="search-modal" placeholder="Search The Doc">
+    <button data-target="search-modal" type="button" class="pl-3 pr-6">
+      <i class="fa-solid fa-magnifying-glass text-theme-dark"></i>
+    </button>
+  </form>
+  <ul class="sidebar-list">
+    <li data-nav-id="" title="Getting Started" class="active group relative">
+      <div class="flex cursor-pointer select-none items-center gap-4" data-accordion="">
+        <h2 class="order-1 text-base font-medium group-[.active]:font-semibold sm:text-[20px] lg:text-[22px]">Getting Started</h2>
+        <div class="order-0 bg-theme-light group-hover:bg-primary group-[.active]:bg-primary flex h-[40px] w-[40px] items-center justify-center rounded-md p-[10px] transition-colors duration-300 sm:h-[50px] sm:w-[50px]">
+          <img src="/docbox/site/images/icons/start.svg" loading="lazy" decoding="async" alt="" class="h-5 w-5 img">
+        </div>
+      </div>
+      <ul class="group-[.active]:mt-4 group-[.active]:max-h-[1000px]">
+        <li class="active group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/requirments/" data-accordion="">Requirments</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/installation/" data-accordion="">Installation</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/configuration/" data-accordion="">Configuration</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/customization/" data-accordion="">Customization</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/elements/" data-accordion="">Elements</a></li>
+        <li class="group">
+          <button class="has-sibling-child" aria-label="Dropdown Collapse" data-accordion="">Child</button>
+          <ul>
+            <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/child/child-1/" data-accordion="">Child 1</a></li>
+            <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/child/child-2/" data-accordion="">Child 2</a></li>
+            <li class="group">
+              <button class="has-sibling-child" aria-label="Dropdown Collapse" data-accordion="">Child 3</button>
+              <ul>
+                <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/child/child-3/child-3.1/" data-accordion="">Child 3.1</a></li>
+                <li class="group">
+                  <button class="has-sibling-child" aria-label="Dropdown Collapse" data-accordion="">Child 3.2</button>
+                  <ul>
+                    <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/child/child-3/child-3.2/child-3.2.1/" data-accordion="">Child 3.2.1</a></li>
+                    <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/child/child-3/child-3.2/child-3.2.2/" data-accordion="">Child 3.2.2</a></li>
+                  </ul>
+                </li>
+                <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/getting-started/child/child-3/child-3.3/" data-accordion="">Child 3.3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li data-nav-id="" title="Account Bill" class="group relative">
+      <div class="flex cursor-pointer select-none items-center gap-4" data-accordion="">
+        <h2 class="order-1 text-base font-medium group-[.active]:font-semibold sm:text-[20px] lg:text-[22px]">Account Bill</h2>
+        <div class="order-0 bg-theme-light group-hover:bg-primary group-[.active]:bg-primary flex h-[40px] w-[40px] items-center justify-center rounded-md p-[10px] transition-colors duration-300 sm:h-[50px] sm:w-[50px]">
+          <img src="/docbox/site/images/icons/bill.svg" loading="lazy" decoding="async" alt="" class="h-5 w-5 img">
+        </div>
+      </div>
+      <ul class="group-[.active]:mt-4 group-[.active]:max-h-[1000px]">
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/linux/" data-accordion="">Linux</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/mac/" data-accordion="">Mac OS</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/routing/" data-accordion="">Routing</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/ubuntu/" data-accordion="">Ubuntu</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/windows/" data-accordion="">Windows</a></li>
+        <li class="group">
+          <button class="has-sibling-child" aria-label="Dropdown Collapse" data-accordion="">Child</button>
+          <ul>
+            <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/child/child-1/" data-accordion="">Child 1</a></li>
+            <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/child/child-2/" data-accordion="">Child 2</a></li>
+            <li class="group">
+              <button class="has-sibling-child" aria-label="Dropdown Collapse" data-accordion="">Child 3</button>
+              <ul>
+                <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/child/child-3/child-3.1/" data-accordion="">Child 3.1</a></li>
+                <li class="group">
+                  <button class="has-sibling-child" aria-label="Dropdown Collapse" data-accordion="">Child 3.2</button>
+                  <ul>
+                    <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/child/child-3/child-3.2/child-3.2.1/" data-accordion="">Child 3.2.1</a></li>
+                    <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/child/child-3/child-3.2/child-3.2.2/" data-accordion="">Child 3.2.2</a></li>
+                  </ul>
+                </li>
+                <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/account-bill/child/child-3/child-3.3/" data-accordion="">Child 3.3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li data-nav-id="" title="Our Features" class="group relative">
+      <div class="flex cursor-pointer select-none items-center gap-4" data-accordion="">
+        <h2 class="order-1 text-base font-medium group-[.active]:font-semibold sm:text-[20px] lg:text-[22px]">Our Features</h2>
+        <div class="order-0 bg-theme-light group-hover:bg-primary group-[.active]:bg-primary flex h-[40px] w-[40px] items-center justify-center rounded-md p-[10px] transition-colors duration-300 sm:h-[50px] sm:w-[50px]">
+          <img src="/docbox/site/images/icons/feature.svg" loading="lazy" decoding="async" alt="" class="h-5 w-5 img">
+        </div>
+      </div>
+      <ul class="group-[.active]:mt-4 group-[.active]:max-h-[1000px]">
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/our-features/linux/" data-accordion="">Linux</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/our-features/mac/" data-accordion="">Mac OS</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/our-features/routing/" data-accordion="">Routing</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/our-features/ubuntu/" data-accordion="">Ubuntu</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/our-features/windows/" data-accordion="">Windows</a></li>
+      </ul>
+    </li>
+    <li data-nav-id="" title="Theme Facility" class="group relative">
+      <div class="flex cursor-pointer select-none items-center gap-4" data-accordion="">
+        <h2 class="order-1 text-base font-medium group-[.active]:font-semibold sm:text-[20px] lg:text-[22px]">Theme Facility</h2>
+        <div class="order-0 bg-theme-light group-hover:bg-primary group-[.active]:bg-primary flex h-[40px] w-[40px] items-center justify-center rounded-md p-[10px] transition-colors duration-300 sm:h-[50px] sm:w-[50px]">
+          <img src="/docbox/site/images/icons/facility.svg" loading="lazy" decoding="async" alt="" class="h-5 w-5 img">
+        </div>
+      </div>
+      <ul class="group-[.active]:mt-4 group-[.active]:max-h-[1000px]">
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/theme-facility/linux/" data-accordion="">Linux</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/theme-facility/mac/" data-accordion="">Mac OS</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/theme-facility/routing/" data-accordion="">Routing</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/theme-facility/ubuntu/" data-accordion="">Ubuntu</a></li>
+        <li class="group"><a href="https://demo.gethugothemes.com/docbox/site/theme-facility/windows/" data-accordion="">Windows</a></li>
+      </ul>
+    </li>
   </ul>
 </aside>
+
+
