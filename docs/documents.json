@@ -1,8 +1,8 @@
 [
   {
     "documentId": 1,
-    "title": "this is a test document",
-    "desccription": "An example document for testing the layout.",
-    "tags": ["tag1", "tag2"]
+    "title": "Creating a NOIZ Account & Verifying Identity",
+    "desccription": "How to register, link Constellation, and verify your account for monetization.",
+    "tags": ["account", "identity", "getting-started"]
   }
 ]
