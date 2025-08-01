@@ -10,8 +10,7 @@
     "title": "Becoming a Creator: Levels, Perks, and Progression",
     "desccription": "Overview of creator eligibility, badge levels, and progression milestones.",
     "tags": ["creator", "progression", "monetization"]
-  }
-  ,
+  },
   {
     "documentId": 3,
     "title": "What is NOIZ? Mission, Culture, and Vision",
@@ -41,5 +40,11 @@
     "title": "Finding Games & Adding Custom Game Tags",
     "desccription": "How to find games in the directory, request new ones, and use tags effectively.",
     "tags": ["streaming", "tags", "games"]
+  },
+  {
+    "documentId": 8,
+    "title": "Echostage: Getting Featured on NOIZ",
+    "desccription": "How Echostage works and how creators can be featured.",
+    "tags": ["echostage", "discovery", "streaming"]
   }
 ]
