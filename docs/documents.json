@@ -23,5 +23,11 @@
     "title": "Platform Overview: Channels, Streams, Quests, and Relays",
     "desccription": "Introduction to NOIZ's core systems and how they work together.",
     "tags": ["overview", "channels", "streams", "quests", "relays"]
+  },
+  {
+    "documentId": 5,
+    "title": "Tour of the Creator Hub",
+    "desccription": "Walkthrough of dashboard features and creator tools.",
+    "tags": ["dashboard", "tools", "creator"]
   }
 ]
