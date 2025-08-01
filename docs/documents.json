@@ -11,4 +11,11 @@
     "desccription": "Overview of streaming eligibility, badge levels, and progression milestones.",
     "tags": ["streaming", "progression", "monetization"]
   }
+  ,
+  {
+    "documentId": 3,
+    "title": "What is NOIZ? Mission, Culture, and Vision",
+    "desccription": "Overview of the platform's purpose, mission, and philosophy.",
+    "tags": ["overview", "culture", "vision"]
+  }
 ]
