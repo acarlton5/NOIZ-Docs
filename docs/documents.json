@@ -35,5 +35,11 @@
     "title": "Understanding Stream Ratings & Maturity Labels",
     "desccription": "Overview of NOIZ's stream rating categories and creator responsibilities.",
     "tags": ["safety", "ratings", "streaming"]
+  },
+  {
+    "documentId": 7,
+    "title": "Finding Games & Adding Custom Game Tags",
+    "desccription": "How to find games in the directory, request new ones, and use tags effectively.",
+    "tags": ["streaming", "tags", "games"]
   }
 ]
