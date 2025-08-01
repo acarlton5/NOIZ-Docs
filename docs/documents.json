@@ -17,5 +17,11 @@
     "title": "What is NOIZ? Mission, Culture, and Vision",
     "desccription": "Overview of the platform's purpose, mission, and philosophy.",
     "tags": ["overview", "culture", "vision"]
+  },
+  {
+    "documentId": 4,
+    "title": "Platform Overview: Channels, Streams, Quests, and Relays",
+    "desccription": "Introduction to NOIZ's core systems and how they work together.",
+    "tags": ["overview", "channels", "streams", "quests", "relays"]
   }
 ]
