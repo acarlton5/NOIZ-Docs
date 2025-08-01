@@ -29,5 +29,11 @@
     "title": "Tour of the Creator Hub",
     "desccription": "Walkthrough of dashboard features and creator tools.",
     "tags": ["dashboard", "tools", "creator"]
+  },
+  {
+    "documentId": 6,
+    "title": "Understanding Stream Ratings & Maturity Labels",
+    "desccription": "Overview of NOIZ's stream rating categories and creator responsibilities.",
+    "tags": ["safety", "ratings", "streaming"]
   }
 ]
