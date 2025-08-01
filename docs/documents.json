@@ -4,5 +4,11 @@
     "title": "Creating a NOIZ Account & Verifying Identity",
     "desccription": "How to register, link Constellation, and verify your account for monetization.",
     "tags": ["account", "identity", "getting-started"]
+  },
+  {
+    "documentId": 2,
+    "title": "Becoming a Streamer: Levels, Perks, and Progression",
+    "desccription": "Overview of streaming eligibility, badge levels, and progression milestones.",
+    "tags": ["streaming", "progression", "monetization"]
   }
 ]
