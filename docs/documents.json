@@ -100,5 +100,15 @@
       "affiliate",
       "db"
     ]
+  },
+  {
+    "documentId": 11,
+    "title": "Chat Roles & Badge Color Guide",
+    "desccription": "Guide to chat roles, badge colors, and display priority on NOIZ.",
+    "tags": [
+      "roles",
+      "badges",
+      "chat"
+    ]
   }
 ]
