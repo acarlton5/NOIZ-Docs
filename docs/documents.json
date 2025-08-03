@@ -3,48 +3,92 @@
     "documentId": 1,
     "title": "Creating a NOIZ Account & Verifying Identity",
     "desccription": "How to register, link Constellation, and verify your account for monetization.",
-    "tags": ["account", "identity", "getting-started"]
+    "tags": [
+      "account",
+      "identity",
+      "getting-started"
+    ]
   },
   {
     "documentId": 2,
     "title": "Becoming a Creator: Levels, Perks, and Progression",
     "desccription": "Overview of creator eligibility, badge levels, and progression milestones.",
-    "tags": ["creator", "progression", "monetization"]
+    "tags": [
+      "creator",
+      "progression",
+      "monetization"
+    ]
   },
   {
     "documentId": 3,
     "title": "What is NOIZ? Mission, Culture, and Vision",
     "desccription": "Overview of the platform's purpose, mission, and philosophy.",
-    "tags": ["overview", "culture", "vision"]
+    "tags": [
+      "overview",
+      "culture",
+      "vision"
+    ]
   },
   {
     "documentId": 4,
     "title": "Platform Overview: Channels, Streams, Quests, and Relays",
     "desccription": "Introduction to NOIZ's core systems and how they work together.",
-    "tags": ["overview", "channels", "streams", "quests", "relays"]
+    "tags": [
+      "overview",
+      "channels",
+      "streams",
+      "quests",
+      "relays"
+    ]
   },
   {
     "documentId": 5,
     "title": "Tour of the Creator Hub",
     "desccription": "Walkthrough of dashboard features and creator tools.",
-    "tags": ["dashboard", "tools", "creator"]
+    "tags": [
+      "dashboard",
+      "tools",
+      "creator"
+    ]
   },
   {
     "documentId": 6,
     "title": "Understanding Stream Ratings & Maturity Labels",
     "desccription": "Overview of NOIZ's stream rating categories and creator responsibilities.",
-    "tags": ["safety", "ratings", "streaming"]
+    "tags": [
+      "safety",
+      "ratings",
+      "streaming"
+    ]
   },
   {
     "documentId": 7,
     "title": "Finding Games & Adding Custom Game Tags",
     "desccription": "How to find games in the directory, request new ones, and use tags effectively.",
-    "tags": ["streaming", "tags", "games"]
+    "tags": [
+      "streaming",
+      "tags",
+      "games"
+    ]
   },
   {
     "documentId": 8,
     "title": "Echostage: Getting Featured on NOIZ",
     "desccription": "How Echostage works and how creators can be featured.",
-    "tags": ["echostage", "discovery", "streaming"]
+    "tags": [
+      "echostage",
+      "discovery",
+      "streaming"
+    ]
+  },
+  {
+    "documentId": 9,
+    "title": "Creator Progression FAQ (Verified / Affiliate / Partner / Partner+)",
+    "desccription": "Frequently asked questions about creator progression levels and badges.",
+    "tags": [
+      "creator",
+      "progression",
+      "faq"
+    ]
   }
 ]
