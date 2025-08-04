@@ -140,5 +140,15 @@
       "support",
       "policy"
     ]
+  },
+  {
+    "documentId": 15,
+    "title": "Sub Gifting, View Boosts, and Quest Bonuses",
+    "desccription": "How sub gifting, view boosts, and quests drive creator progress on NOIZ.",
+    "tags": [
+      "support",
+      "gifting",
+      "quests"
+    ]
   }
 ]
