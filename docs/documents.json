@@ -110,5 +110,15 @@
       "badges",
       "chat"
     ]
+  },
+  {
+    "documentId": 12,
+    "title": "Channel Editors: Permissions & Access",
+    "desccription": "Overview of editor roles, permissions, and best practices for managing access.",
+    "tags": [
+      "roles",
+      "editor",
+      "permissions"
+    ]
   }
 ]
