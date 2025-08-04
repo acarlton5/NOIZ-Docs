@@ -93,8 +93,8 @@
   },
   {
     "documentId": 10,
-    "title": "Earning Before Affiliate \u2013 What You Can Do",
-    "desccription": "How to earn \u26a1\ufe0edB before reaching Affiliate status.",
+    "title": "Earning Before Affiliate – What You Can Do",
+    "desccription": "How to earn ⚡︎dB before reaching Affiliate status.",
     "tags": [
       "monetization",
       "affiliate",
@@ -149,6 +149,17 @@
       "support",
       "gifting",
       "quests"
+    ]
+  },
+  {
+    "documentId": 16,
+    "title": "Decibels Exchange & Wallet Use Policy",
+    "desccription": "Explains how Decibels and Charged Decibels can be exchanged, used, and cashed out inside Constellation.",
+    "tags": [
+      "policy",
+      "db",
+      "wallet",
+      "exchange"
     ]
   }
 ]
