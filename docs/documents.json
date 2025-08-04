@@ -120,5 +120,15 @@
       "editor",
       "permissions"
     ]
+  },
+  {
+    "documentId": 13,
+    "title": "Marketplace Licensing & Legal Use Policy",
+    "desccription": "Outlines licensing terms and permitted use for Marketplace digital assets.",
+    "tags": [
+      "marketplace",
+      "licensing",
+      "policy"
+    ]
   }
 ]
