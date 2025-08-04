@@ -93,8 +93,8 @@
   },
   {
     "documentId": 10,
-    "title": "Earning Before Affiliate – What You Can Do",
-    "desccription": "How to earn ⚡︎dB before reaching Affiliate status.",
+    "title": "Earning Before Affiliate \u2013 What You Can Do",
+    "desccription": "How to earn \u26a1\ufe0edB before reaching Affiliate status.",
     "tags": [
       "monetization",
       "affiliate",
@@ -128,6 +128,16 @@
     "tags": [
       "marketplace",
       "licensing",
+      "policy"
+    ]
+  },
+  {
+    "documentId": 14,
+    "title": "Refunds: When They Apply and How to Request",
+    "desccription": "Guidelines on refund eligibility and the request process.",
+    "tags": [
+      "refunds",
+      "support",
       "policy"
     ]
   }
