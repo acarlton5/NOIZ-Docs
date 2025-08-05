@@ -324,5 +324,15 @@
       "copyright",
       "streaming"
     ]
+  },
+  {
+    "documentId": 33,
+    "title": "Constellation Security & Multi-Factor Access",
+    "desccription": "How Constellation secures NOIZ access with multi-factor tokens.",
+    "tags": [
+      "constellation",
+      "security",
+      "access"
+    ]
   }
 ]
