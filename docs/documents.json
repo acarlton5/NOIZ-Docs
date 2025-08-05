@@ -384,5 +384,15 @@
       "policy",
       "safety"
     ]
+  },
+  {
+    "documentId": 39,
+    "title": "Gambling, Contests, and Giveaways Policy",
+    "desccription": "Rules for running giveaways, contests, and avoiding gambling on NOIZ.",
+    "tags": [
+      "policy",
+      "gambling",
+      "giveaways"
+    ]
   }
 ]
