@@ -211,5 +211,15 @@
       "sponsorship",
       "quests"
     ]
+  },
+  {
+    "documentId": 22,
+    "title": "Decibels Token Overview: Uses, Supply, and Utility",
+    "desccription": "Overview of Decibel token types, supply management, and platform utility.",
+    "tags": [
+      "db",
+      "tokens",
+      "support"
+    ]
   }
 ]
