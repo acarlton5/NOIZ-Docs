@@ -191,5 +191,15 @@
       "monetization",
       "tiers"
     ]
+  },
+  {
+    "documentId": 20,
+    "title": "Earnings Dashboard FAQ (My Loot)",
+    "desccription": "FAQ for using the My Loot dashboard, tracking ⚡︎dB, and cashout eligibility.",
+    "tags": [
+      "monetization",
+      "dashboard",
+      "faq"
+    ]
   }
 ]
