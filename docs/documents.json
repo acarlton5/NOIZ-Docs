@@ -294,5 +294,15 @@
       "ddos",
       "streams"
     ]
+  },
+  {
+    "documentId": 30,
+    "title": "Community Safety & Mental Health Resources",
+    "desccription": "Support features and external resources for emotional wellness on NOIZ.",
+    "tags": [
+      "safety",
+      "mental health",
+      "support"
+    ]
   }
 ]
