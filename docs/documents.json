@@ -181,5 +181,15 @@
       "sponsorship",
       "disclosure"
     ]
+  },
+  {
+    "documentId": 19,
+    "title": "Marketplace Access by Monetization Tier",
+    "desccription": "How monetization tiers affect Marketplace access and listing options.",
+    "tags": [
+      "marketplace",
+      "monetization",
+      "tiers"
+    ]
   }
 ]
