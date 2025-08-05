@@ -242,5 +242,15 @@
       "legal",
       "monetization"
     ]
+  },
+  {
+    "documentId": 25,
+    "title": "NOIZ Privacy Policy: Rights, Data, and Platform Protection",
+    "desccription": "Outlines user privacy rights, data practices, and platform protections.",
+    "tags": [
+      "privacy",
+      "policy",
+      "data"
+    ]
   }
 ]
