@@ -93,8 +93,8 @@
   },
   {
     "documentId": 10,
-    "title": "Earning Before Affiliate – What You Can Do",
-    "desccription": "How to earn ⚡︎dB before reaching Affiliate status.",
+    "title": "Earning Before Affiliate \u2013 What You Can Do",
+    "desccription": "How to earn \u26a1\ufe0edB before reaching Affiliate status.",
     "tags": [
       "monetization",
       "affiliate",
@@ -160,6 +160,16 @@
       "db",
       "ledger",
       "exchange"
+    ]
+  },
+  {
+    "documentId": 17,
+    "title": "Token Payout Schedules & Revenue Split Explained",
+    "desccription": "How payouts work, revenue splits, and eligibility requirements.",
+    "tags": [
+      "monetization",
+      "payouts",
+      "db"
     ]
   }
 ]
