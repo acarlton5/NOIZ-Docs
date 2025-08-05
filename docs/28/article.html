@@ -1,0 +1,117 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <blockquote>
+        <p>This guide explains how account access, session control, and token security work on NOIZ — for both creators and viewers.</p>
+      </blockquote>
+
+      <h2 id="noiz-accounts-use-token-based-access">1. NOIZ Accounts Use Token-Based Access</h2>
+      <p>Unlike traditional platforms, NOIZ accounts do not rely on usernames or passwords. Instead, access is secured using the <strong>Constellation handshake system</strong>, which replaces insecure login credentials with time-limited, device-authenticated tokens.</p>
+      <p><strong>Your account is protected by:</strong></p>
+      <ul>
+        <li>A <strong>6-digit Constellation handshake code</strong> (single-use)</li>
+        <li>Authenticated device links (via the Constellation mobile app)</li>
+        <li>Verified connection sessions (you can revoke access at any time)</li>
+        <li>2FA options inside your Constellation payout settings (for eligible users)</li>
+      </ul>
+      <blockquote>
+        <p><strong>Important:</strong> Never share your handshake code or QR token on stream or with others. These can be used to impersonate your account temporarily.</p>
+      </blockquote>
+
+      <h2 id="top-security-tips-for-all-users">2. Top Security Tips for All Users</h2>
+      <table>
+        <thead>
+          <tr><th>Tip</th><th>Why It Matters</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Use device lock or biometric protection on your Constellation app</td><td>Prevents unauthorized access if your device is lost or stolen</td></tr>
+          <tr><td>Keep your 6-digit codes private</td><td>Codes can be used to spoof access briefly if leaked</td></tr>
+          <tr><td>Review your active connections weekly</td><td>Clean up old sessions and revoke unused devices</td></tr>
+          <tr><td>Enable 2FA in payout settings</td><td>Adds an additional layer of protection to your ⚡︎dB earnings</td></tr>
+          <tr><td>Avoid third-party tools that ask for external logins</td><td>Only use plugins approved through the NOIZ Marketplace</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="for-creators-stream-specific-security">3. For Creators: Stream-Specific Security</h2>
+      <p>Creators have additional responsibilities around session and stream control. To stay protected:</p>
+      <ul>
+        <li><strong>Rotate your stream key</strong> if switching software or devices</li>
+        <li><strong>Never show your Constellation login codes or QR tokens</strong> on stream</li>
+        <li><strong>Restrict access to stream controls</strong> (limit to moderators or channel editors only)</li>
+        <li><strong>Audit regularly:</strong>
+          <ul>
+            <li>Channel Editors</li>
+            <li>Approved Marketplace plugins</li>
+            <li>Connected overlays or automation tools</li>
+          </ul>
+        </li>
+      </ul>
+      <blockquote>
+        <p>Hosting carries responsibility. If your channel is used to display another stream, you may still be held accountable for violations. Choose Editors carefully.</p>
+      </blockquote>
+
+      <h2 id="for-viewers-privacy-safety-settings">4. For Viewers: Privacy &amp; Safety Settings</h2>
+      <p>All viewers have access to platform-wide privacy tools:</p>
+      <ul>
+        <li><strong>Block users or hide chat content</strong></li>
+        <li><strong>Disable leaderboard visibility</strong> (e.g., hide your gifting totals)</li>
+        <li><strong>Use anonymous mode</strong> when sending Decibels</li>
+        <li><strong>Opt out of Quest profile tracking</strong> from Settings → Privacy &amp; Safety</li>
+      </ul>
+      <p>These controls give viewers full command over how they participate and appear on NOIZ.</p>
+
+      <h2 id="constellation-device-safety">5. Constellation Device Safety</h2>
+      <p>Treat Constellation like your identity key:</p>
+      <ul>
+        <li>Install it only on your <strong>personal device</strong></li>
+        <li>If lost or compromised:
+          <ul>
+            <li>Log in on a new device</li>
+            <li>Revoke access to the old one immediately via <strong>Active Connections</strong></li>
+            <li>Contact NOIZ Support to request a session lock or temporary freeze</li>
+          </ul>
+        </li>
+        <li>Keep the Constellation app <strong>updated</strong> — new security updates are pushed regularly</li>
+      </ul>
+
+      <h2 id="reporting-suspicious-activity">6. Reporting Suspicious Activity</h2>
+      <p>Use NOIZ’s built-in reporting system to flag:</p>
+      <ul>
+        <li>Unauthorized ⚡︎dB transfers</li>
+        <li>Suspicious account access</li>
+        <li>Potential fraud in quests or Marketplace assets</li>
+      </ul>
+      <p>Your report is routed to:</p>
+      <ul>
+        <li>The creator (if the issue is channel-specific)</li>
+        <li><strong>DCT</strong> (Dissonance Compliance Team) for platform moderation</li>
+        <li><strong>Staff Admins</strong> for legal or financial escalations</li>
+      </ul>
+
+      <h2 id="noizs-role-in-account-protection">7. NOIZ's Role in Account Protection</h2>
+      <p>What we <strong>do</strong>:</p>
+      <ul>
+        <li>Monitor for <strong>botting, phishing, and self-support loops</strong></li>
+        <li>Automatically flag suspicious gifting or boost patterns</li>
+        <li>Notify you of <strong>new device logins or session connections</strong></li>
+      </ul>
+      <p>What we <strong>don’t</strong>:</p>
+      <ul>
+        <li>Store your private Constellation device information</li>
+        <li>Ask for seed phrases, passwords, or private keys</li>
+        <li>Share personal data with advertisers or third-party ad tech</li>
+      </ul>
+
+      <h2 id="faq">8. FAQ</h2>
+      <p><strong>Q: What if I accidentally shared a handshake code?</strong><br />
+      A: Revoke the session via Constellation immediately and reauthenticate on a secure device.</p>
+      <p><strong>Q: Can someone take my account by knowing my channel name?</strong><br />
+      A: No. Without your verified Constellation token and code, no login can occur.</p>
+      <p><strong>Q: How do I reset my NOIZ access if my phone is lost?</strong><br />
+      A: Log into Constellation on another device and revoke the old session. If needed, contact Support to request a session reset.</p>
+      <p><strong>Q: Does NOIZ offer recovery for stolen ⚡︎dB?</strong><br />
+      A: If theft is confirmed through fraud or compromise, ⚡︎dB may be restored at NOIZ’s discretion. Abuse or negligence may void eligibility.</p>
+    </article>
+  </div>
+</div>
+
