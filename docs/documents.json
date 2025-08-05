@@ -304,5 +304,15 @@
       "mental health",
       "support"
     ]
+  },
+  {
+    "documentId": 31,
+    "title": "Understanding and Reporting Harassment",
+    "desccription": "How NOIZ defines harassment, reporting procedures, and responses.",
+    "tags": [
+      "safety",
+      "harassment",
+      "reporting"
+    ]
   }
 ]
