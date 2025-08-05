@@ -314,5 +314,15 @@
       "harassment",
       "reporting"
     ]
+  },
+  {
+    "documentId": 32,
+    "title": "Music, Copyright, and Your Stream",
+    "desccription": "Guidelines for stream-safe music, licensing, and DMCA on NOIZ.",
+    "tags": [
+      "music",
+      "copyright",
+      "streaming"
+    ]
   }
 ]
