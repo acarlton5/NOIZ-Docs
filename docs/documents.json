@@ -153,12 +153,12 @@
   },
   {
     "documentId": 16,
-    "title": "Decibels Exchange & Wallet Use Policy",
-    "desccription": "Explains how Decibels and Charged Decibels can be exchanged, used, and redeemed inside Constellation.",
+    "title": "Decibels Exchange & Ledger Use Policy",
+    "desccription": "Explains how Decibels and Charged Decibels are viewed, tracked, and used within NOIZ, and defines Constellation as an access ledger.",
     "tags": [
       "policy",
       "db",
-      "wallet",
+      "ledger",
       "exchange"
     ]
   }
