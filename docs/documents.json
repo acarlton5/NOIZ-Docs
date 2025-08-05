@@ -374,5 +374,15 @@
       "clothing",
       "exposure"
     ]
+  },
+  {
+    "documentId": 38,
+    "title": "Username Guidelines & Blocked Name List",
+    "desccription": "Rules for usernames, blocked words, and name change policy.",
+    "tags": [
+      "usernames",
+      "policy",
+      "safety"
+    ]
   }
 ]
