@@ -1,0 +1,114 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <blockquote>
+        <p>This document explains how NOIZ protects creators from DDoS attacks, conceals origin IP addresses, and prevents network-based targeting. Our infrastructure is built to isolate, obfuscate, and secure all broadcast activity — by default.</p>
+      </blockquote>
+
+      <h2 id="what-is-a-ddos-attack">1. What Is a DDoS Attack?</h2>
+      <p>A <strong>Distributed Denial of Service (DDoS)</strong> attack occurs when a malicious actor floods a specific IP address with excessive traffic. This can:</p>
+      <ul>
+        <li>Interrupt your internet connection</li>
+        <li>Cause your stream to drop or lag</li>
+        <li>Force your device or router offline</li>
+      </ul>
+      <p>Streamers on peer-to-peer services or platforms that expose their IP (e.g., Discord, certain RTMP tools) are highly vulnerable to these attacks.</p>
+      <blockquote>
+        <p>⚠️ NOIZ was architected from day one to prevent these attacks at the <strong>network layer</strong> — no need for third-party VPNs or masking tools.</p>
+      </blockquote>
+
+      <h2 id="how-noiz-protects-your-ip">2. How NOIZ Protects Your IP</h2>
+      <p>Your <strong>real IP address is never exposed</strong> when using NOIZ. This applies across the entire platform, including:</p>
+      <ul>
+        <li>Viewer access</li>
+        <li>Relay transmission (Pathweavers)</li>
+        <li>Plugin or overlay integrations</li>
+      </ul>
+      <p><strong>All stream traffic is routed through:</strong></p>
+      <ul>
+        <li>Secure NOIZ <strong>ingress gateways</strong></li>
+        <li>Sanitized and sandboxed <strong>relay nodes</strong></li>
+        <li>Obfuscated outbound stream endpoints</li>
+      </ul>
+      <p>Even if a malicious actor inspects your stream path, they’ll only encounter relay IPs — <strong>never your device or home network</strong>.</p>
+
+      <h2 id="relay-architecture-and-ddos-safety">3. Relay Architecture and DDoS Safety</h2>
+      <p>NOIZ uses a hybrid infrastructure composed of platform-operated gateways and <strong>Pathweavers</strong> (community-hosted relay nodes). The architecture is built to <strong>de-risk IP exposure and isolate bad actors</strong>.</p>
+      <p>Relay properties:</p>
+      <ul>
+        <li>Never pull data directly from a creator’s IP</li>
+        <li>Are assigned dynamically by region and trust score</li>
+        <li>Are monitored in real-time for:
+          <ul>
+            <li>Packet anomalies</li>
+            <li>Spoof attempts</li>
+            <li>Identity leaks or unauthorized logging</li>
+          </ul>
+        </li>
+      </ul>
+      <p>Relay operators cannot see your IP or inspect raw socket traffic.</p>
+
+      <h2 id="extra-measures-for-creators">4. Extra Measures for Creators</h2>
+      <p>You do <strong>not</strong> need to configure a VPN or third-party proxy to stay safe on NOIZ.</p>
+      <p>✅ NOIZ Studio, our OBS fork, auto-obfuscates stream handshake metadata</p>
+      <p>✅ Stream handshake routing is encrypted and tokenized</p>
+      <p>When setting your route, you can choose:</p>
+      <ul>
+        <li><strong>Auto-secure</strong> (recommended for best balance of speed and protection)</li>
+        <li><strong>Manual safe relay</strong> (for advanced users or regional control)</li>
+      </ul>
+
+      <h2 id="how-plugins-and-overlays-stay-safe">5. How Plugins &amp; Overlays Stay Safe</h2>
+      <p>All tools and overlays on NOIZ are sandboxed under strict platform policies.</p>
+      <p>No plugin can:</p>
+      <ul>
+        <li>Access browser-level or device IPs</li>
+        <li>Interact with raw socket traffic</li>
+        <li>Circumvent permission-based scopes</li>
+      </ul>
+      <p>Creators and developers cannot upload tools to the Marketplace that gather external IP data or establish P2P behavior. These restrictions are built into the platform runtime and enforced at upload.</p>
+
+      <h2 id="what-to-do-if-you-suspect-a-ddos">6. What to Do If You Suspect a DDoS</h2>
+      <p><strong>First, rule out normal connection issues.</strong> Ask yourself:</p>
+      <ul>
+        <li>Is your internet unstable on all platforms?</li>
+        <li>Are you losing connection to services <strong>outside</strong> of NOIZ?</li>
+      </ul>
+      <p>If you suspect a targeted attack:</p>
+      <ol>
+        <li><strong>End your stream immediately</strong></li>
+        <li><strong>Reboot your modem/router</strong></li>
+        <li>Request a new IP address from your ISP (if possible)</li>
+        <li>File a report under:<br><code>Settings → Report → “Targeted Network Attack”</code></li>
+      </ol>
+      <p>NOIZ will temporarily harden your stream routing.</p>
+
+      <h2 id="how-noiz-responds">7. How NOIZ Responds</h2>
+      <p>If you submit a report or DDoS is detected through logs:</p>
+      <ul>
+        <li><strong>Your relay path may be forcibly rerouted</strong> through shielded NOIZ gateways</li>
+        <li>All <strong>connection logs and packet routes</strong> are reviewed</li>
+        <li>Attackers are:
+          <ul>
+            <li>Flagged internally</li>
+            <li>Device-banned via ingress filtering</li>
+            <li>Investigated for coordinated abuse</li>
+          </ul>
+        </li>
+      </ul>
+      <p>If the attack occurred off-platform (e.g., Discord voice, Twitch stream), NOIZ may recommend that you contact your <strong>ISP</strong> or <strong>local cybersecurity authorities</strong>.</p>
+
+      <h2 id="faq">8. FAQ</h2>
+      <dl>
+        <dt>Do I need a VPN to stream on NOIZ?</dt>
+        <dd>No. VPNs are not required — NOIZ handles IP masking automatically.</dd>
+        <dt>Can someone find my IP if they gift me Decibels or interact in chat?</dt>
+        <dd>Absolutely not. No support action on NOIZ ever reveals a creator’s IP.</dd>
+        <dt>Are relay operators able to trace my real location?</dt>
+        <dd>No. Relays never receive your origin IP. All stream data is forwarded from a NOIZ-operated ingress node.</dd>
+        <dt>What if I host a relay — can I get attacked instead?</dt>
+        <dd>Hosting a relay is voluntary and includes traffic shaping protections. Relay operators are sandboxed from DDoS targeting and abuse vectors, and relay IPs are regularly cycled.</dd>
+      </dl>
+    </article>
+  </div>
+</div>

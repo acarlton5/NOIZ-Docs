@@ -284,5 +284,15 @@
       "creators",
       "viewers"
     ]
+  },
+  {
+    "documentId": 29,
+    "title": "DDoS Protection & IP Obfuscation on Streams",
+    "desccription": "How NOIZ prevents DDoS attacks and masks creator IP addresses.",
+    "tags": [
+      "security",
+      "ddos",
+      "streams"
+    ]
   }
 ]
