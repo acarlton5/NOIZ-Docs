@@ -273,5 +273,16 @@
       "quests",
       "tokens"
     ]
+  },
+  {
+    "documentId": 28,
+    "title": "Account Security: Best Practices for Creators & Viewers",
+    "desccription": "How account access, session control, and token security work on NOIZ for creators and viewers.",
+    "tags": [
+      "security",
+      "accounts",
+      "creators",
+      "viewers"
+    ]
   }
 ]
