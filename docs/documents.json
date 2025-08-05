@@ -221,5 +221,16 @@
       "tokens",
       "support"
     ]
+  },
+  {
+    "documentId": 23,
+    "title": "Constellation Linking, Custody, and Withdrawals",
+    "desccription": "How Constellation handles account linking, Decibel custody, and \u26a1\ufe0edB withdrawals.",
+    "tags": [
+      "constellation",
+      "db",
+      "payouts",
+      "security"
+    ]
   }
 ]
