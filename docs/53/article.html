@@ -1,0 +1,93 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <blockquote>
+        <p>ITG (Instant Transfer Graph) is NOIZ’s custom streaming protocol. Built for interactivity, ultra-low latency, and stability, it replaces outdated web video delivery with a creator-first system.</p>
+      </blockquote>
+
+      <h2 id="1-what-makes-noiz-streaming-different">1. What Makes NOIZ Streaming Different</h2>
+      <p>Unlike traditional platforms using HTTP or HLS, <strong>NOIZ streams use ITG</strong>, a protocol developed specifically for:</p>
+      <ul>
+        <li>⚡️ <strong>Ultra-low latency</strong> (often under 300ms glass-to-glass)</li>
+        <li>🔁 <strong>Bidirectional interactivity</strong> with fast viewer feedback</li>
+        <li>🌐 <strong>Relay-based global routing</strong> without compromising sync</li>
+      </ul>
+      <p><strong>ITG is not a web video player</strong> — it’s a live-first protocol, optimized for real-time performance and community-powered distribution.</p>
+
+      <h2 id="2-how-itg-works-conceptually">2. How ITG Works (Conceptually)</h2>
+      <p>When a stream begins:</p>
+      <ol>
+        <li>Your encoder sends a real-time video feed (via OBS or NOIZ Studio)</li>
+        <li>The signal routes through your region’s <strong>nearest ITG relay node</strong></li>
+        <li>Viewers receive the stream via UDP-style packet delivery — <strong>no segmenting, no chunk lag</strong></li>
+      </ol>
+      <p>🧠 Key technical traits:</p>
+      <ul>
+        <li>Continuous packets (not “chunks”)</li>
+        <li>Low delay prioritized over perfect buffering</li>
+        <li>Built-in congestion recovery and handshake verification</li>
+        <li>No need for CDN edge caching — relays handle it natively</li>
+      </ul>
+      <p>Even during bandwidth dips, ITG tries to <strong>recover without restarting the session</strong>.</p>
+
+      <h2 id="3-why-this-matters-to-creators">3. Why This Matters to Creators</h2>
+      <p>✅ ITG enables:</p>
+      <ul>
+        <li><strong>Instant viewer reactions</strong> — ideal for rhythm, challenge, and reaction-based content</li>
+        <li><strong>Better overlay/plugin timing</strong> — precise alignment with in-stream events</li>
+        <li><strong>Chat-to-action triggers</strong> — faster response than any HTTP-based service</li>
+        <li><strong>Global consistency</strong> — the stream looks the same in Berlin as it does in L.A.</li>
+      </ul>
+      <p>It transforms live content from “just watching” into active participation.</p>
+
+      <h2 id="4-how-relay-nodes-factor-in">4. How Relay Nodes Factor In</h2>
+      <p>NOIZ operates on a hybrid network of:</p>
+      <ul>
+        <li>💠 <strong>Pathweaver relays</strong> (community-hosted)</li>
+        <li>🌍 <strong>Platform backbone relays</strong> (official nodes)</li>
+      </ul>
+      <p>These allow:</p>
+      <ul>
+        <li>Localized stream delivery</li>
+        <li>Dynamic route optimization</li>
+        <li>Redundancy during outages or congestion</li>
+      </ul>
+      <p>🧭 The ITG protocol:</p>
+      <ul>
+        <li><strong>Auto-selects</strong> the most efficient node</li>
+        <li><strong>Re-routes</strong> if your node underperforms</li>
+        <li><strong>Keeps sessions alive</strong> with minimal handshake churn</li>
+      </ul>
+      <p>You can also <strong>host a node yourself</strong> to improve your region’s coverage (see Pathweaver FAQ).</p>
+
+      <h2 id="5-compatibility-setup">5. Compatibility &amp; Setup</h2>
+      <p>ITG is supported by:</p>
+      <ul>
+        <li>🛠️ <strong>NOIZ Studio</strong> – NOIZ’s OBS fork with built-in ITG support</li>
+        <li>🎥 <strong>OBS Studio</strong> – with manual ingest setup</li>
+        <li>🔌 <strong>3rd-party software</strong> – if it supports custom RTMP/UDP-style ingest</li>
+      </ul>
+      <p>To stream using ITG:</p>
+      <ol>
+        <li>Copy your relay ingest URL and stream key</li>
+        <li>Choose a relay (or use auto-select)</li>
+        <li>Go live — <strong>ITG handles optimization behind the scenes</strong></li>
+      </ol>
+
+      <h2 id="6-limitations-to-be-aware-of">6. Limitations to Be Aware Of</h2>
+      <p>While ITG excels at <strong>latency and responsiveness</strong>, it trades off some traditional buffering benefits:</p>
+      <ul>
+        <li>📉 <strong>Brief stutters</strong> may occur on poor connections (no chunk rebuffering)</li>
+        <li>🧱 Requires <strong>hardware encoding</strong> or efficient software settings</li>
+        <li>🌐 <strong>Relay availability matters</strong> — some regions may perform better with local Pathweavers</li>
+      </ul>
+      <p>For the best experience, streamers should ensure stable upstream bandwidth and use the NOIZ Studio setup wizard.</p>
+
+      <h2 id="7-faq">7. FAQ</h2>
+      <p><strong>Is ITG good for mobile streaming?</strong><br>→ Yes, especially with NOIZ Mobile Studio. It’s optimized for mobile network variability.</p>
+      <p><strong>Can I run a relay myself?</strong><br>→ Yes! See the Pathweaver Hosting Guide for eligibility and setup instructions.</p>
+      <p><strong>Does ITG support 4K or 120fps?</strong><br>→ 4K is supported, but relay availability and encoding power will affect smoothness. 120fps is experimental and not recommended for global streams yet.</p>
+      <p><strong>What happens if my stream drops mid-session?</strong><br>→ ITG attempts to reconnect seamlessly. Viewers will rejoin automatically unless the session fully closes.</p>
+    </article>
+  </div>
+</div>

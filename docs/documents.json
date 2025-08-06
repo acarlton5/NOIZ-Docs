@@ -524,5 +524,15 @@
       "safety",
       "dct"
     ]
+  },
+  {
+    "documentId": 53,
+    "title": "Streaming Protocol Overview: What is ITG?",
+    "desccription": "Introduction to ITG streaming protocol and its advantages.",
+    "tags": [
+      "streaming",
+      "itg",
+      "overview"
+    ]
   }
 ]
