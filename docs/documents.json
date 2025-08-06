@@ -504,5 +504,15 @@
       "safety",
       "staff-admin"
     ]
+  },
+  {
+    "documentId": 51,
+    "title": "DCT Tools, Powers, and Limitations — Full Policy",
+    "desccription": "Full policy on DCT enforcement tools, authority, and limits.",
+    "tags": [
+      "moderation",
+      "safety",
+      "dct"
+    ]
   }
 ]
