@@ -494,5 +494,15 @@
       "safety",
       "dct"
     ]
+  },
+  {
+    "documentId": 50,
+    "title": "When Cases Are Escalated to Staff Admins — Full Policy",
+    "desccription": "Policy on escalation to Staff Admins, their authority, and how to request review.",
+    "tags": [
+      "moderation",
+      "safety",
+      "staff-admin"
+    ]
   }
 ]
