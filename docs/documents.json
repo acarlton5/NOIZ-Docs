@@ -93,8 +93,8 @@
   },
   {
     "documentId": 10,
-    "title": "Earning Before Affiliate \u2013 What You Can Do",
-    "desccription": "How to earn \u26a1\ufe0edB before reaching Affiliate status.",
+    "title": "Earning Before Affiliate – What You Can Do",
+    "desccription": "How to earn ⚡︎dB before reaching Affiliate status.",
     "tags": [
       "monetization",
       "affiliate",
@@ -195,7 +195,7 @@
   {
     "documentId": 20,
     "title": "Earnings Dashboard FAQ (My Loot)",
-    "desccription": "FAQ for using the My Loot dashboard, tracking \u26a1\ufe0edB, and cashout eligibility.",
+    "desccription": "FAQ for using the My Loot dashboard, tracking ⚡︎dB, and cashout eligibility.",
     "tags": [
       "monetization",
       "dashboard",
@@ -225,7 +225,7 @@
   {
     "documentId": 23,
     "title": "Constellation Linking, Custody, and Withdrawals",
-    "desccription": "How Constellation handles account linking, Decibel custody, and \u26a1\ufe0edB withdrawals.",
+    "desccription": "How Constellation handles account linking, Decibel custody, and ⚡︎dB withdrawals.",
     "tags": [
       "constellation",
       "db",
@@ -404,8 +404,7 @@
       "safety",
       "roles"
     ]
-  }
-  ,
+  },
   {
     "documentId": 41,
     "title": "How to Report Violations (And What Happens Next)",
@@ -414,6 +413,16 @@
       "safety",
       "reporting",
       "moderation"
+    ]
+  },
+  {
+    "documentId": 42,
+    "title": "Appealing a Ban or Suspension",
+    "desccription": "How to file appeals for enforcement actions and understand review outcomes.",
+    "tags": [
+      "moderation",
+      "appeals",
+      "safety"
     ]
   }
 ]
