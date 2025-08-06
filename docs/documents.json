@@ -474,12 +474,21 @@
       "safety",
       "dct"
     ]
-  }
-,
+  },
   {
     "documentId": 48,
     "title": "How DCT Reviews Reports & Makes Decisions — Section Breakdown",
     "desccription": "Breakdown of DCT review process, actions, and appeal guidelines.",
+    "tags": [
+      "moderation",
+      "safety",
+      "dct"
+    ]
+  },
+  {
+    "documentId": 49,
+    "title": "How to Interact with DCT Staff (and How Not To)",
+    "desccription": "Rules for communicating with the DCT during appeals and escalations.",
     "tags": [
       "moderation",
       "safety",
