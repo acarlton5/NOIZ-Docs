@@ -464,5 +464,15 @@
       "staff",
       "impersonation"
     ]
+  },
+  {
+    "documentId": 47,
+    "title": "What Is the DCT? (Dissonance Compliance Team Overview)",
+    "desccription": "Overview of NOIZ's global moderation team and its responsibilities.",
+    "tags": [
+      "moderation",
+      "safety",
+      "dct"
+    ]
   }
 ]
