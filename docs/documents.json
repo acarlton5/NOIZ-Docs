@@ -434,5 +434,16 @@
       "mods",
       "tools"
     ]
+  },
+  {
+    "documentId": 44,
+    "title": "Chat Filters, Block Lists, and Safety Controls",
+    "desccription": "Overview of chat filtering, block lists, and channel safety options.",
+    "tags": [
+      "chat",
+      "safety",
+      "filters"
+    ]
   }
 ]
+
