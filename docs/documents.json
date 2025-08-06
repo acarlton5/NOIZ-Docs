@@ -394,5 +394,15 @@
       "gambling",
       "giveaways"
     ]
+  },
+  {
+    "documentId": 40,
+    "title": "Global Moderation System & Local Channel Mods",
+    "desccription": "Overview of platform-wide and channel-specific moderation roles and permissions.",
+    "tags": [
+      "moderation",
+      "safety",
+      "roles"
+    ]
   }
 ]
