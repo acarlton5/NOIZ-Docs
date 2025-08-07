@@ -1,0 +1,139 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <blockquote>
+        <p>NOIZ is engineered for live-first content. Latency, quality, and interactivity are tuned for creators — not delayed by ad servers or legacy formats.</p>
+      </blockquote>
+
+      <h2 id="1-what-viewers-experience-on-noiz">1. What Viewers Experience on NOIZ</h2>
+      <p>NOIZ is built for <strong>real-time interactivity</strong>, meaning:</p>
+      <ul>
+        <li>⚡ <strong>Latency is typically under 500ms</strong></li>
+        <li>📍 Viewers are auto-routed through the <strong>nearest optimal relay</strong></li>
+        <li>🎬 There’s <strong>no 10-second delay</strong> like on HLS platforms</li>
+      </ul>
+      <p>This is possible because NOIZ uses:</p>
+      <ul>
+        <li><strong>ITG (Instant Transmission Grid)</strong> — a continuous packet protocol</li>
+        <li><strong>Adaptive relays</strong> — smart route switching based on viewer/device</li>
+        <li><strong>Minimal handshake time</strong> — no startup chunk buffering</li>
+      </ul>
+
+      <h2 id="2-what-streamers-control">2. What Streamers Control</h2>
+      <p>Streamers choose their own:</p>
+      <ul>
+        <li>🎚️ <strong>Bitrate and resolution</strong></li>
+        <li>🧪 <strong>Encoder settings</strong> (hardware or software)</li>
+        <li>🎥 <strong>Streaming tools</strong> (NOIZ Studio, OBS, custom RTMP)</li>
+      </ul>
+      <p>✅ NOIZ never injects forced delay into streams.</p>
+      <p>These settings are applied through:</p>
+      <ul>
+        <li><strong>NOIZ Studio</strong> → auto-config wizard</li>
+        <li><strong>OBS or 3rd-party</strong> → manual RTMP input</li>
+      </ul>
+
+      <h2 id="3-recommended-bitrate-settings">3. Recommended Bitrate Settings</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Resolution</th>
+            <th>FPS</th>
+            <th>Recommended Bitrate</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>720p</td>
+            <td>30fps</td>
+            <td>2,000–3,500 kbps</td>
+            <td>Minimum for reliable streams</td>
+          </tr>
+          <tr>
+            <td>720p</td>
+            <td>60fps</td>
+            <td>3,000–4,500 kbps</td>
+            <td>Smooth motion for games or action</td>
+          </tr>
+          <tr>
+            <td>1080p</td>
+            <td>30fps</td>
+            <td>4,000–6,000 kbps</td>
+            <td>Strong fidelity for general streams</td>
+          </tr>
+          <tr>
+            <td>1080p</td>
+            <td>60fps</td>
+            <td>6,000–9,000 kbps</td>
+            <td>High performance streamers preferred</td>
+          </tr>
+          <tr>
+            <td>1440p/4K</td>
+            <td>30+fps</td>
+            <td>9,000–14,000 kbps (beta)</td>
+            <td>Limited relay support during testing</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>🧠 <em>Use hardware encoders</em> (NVENC, AMD VCE, Apple VT) whenever possible for best performance.</p>
+
+      <h2 id="4-transcoding-availability">4. Transcoding Availability</h2>
+      <p>Transcoding lets viewers:</p>
+      <ul>
+        <li>Switch between quality levels (high/medium/low)</li>
+        <li>Avoid stalling on slower networks</li>
+        <li>Match stream quality to mobile or older hardware</li>
+      </ul>
+      <p>📡 <strong>Transcoding is enabled automatically when available:</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Channel Tier</th>
+            <th>Transcoding?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Partner</td>
+            <td>✅ Always available</td>
+          </tr>
+          <tr>
+            <td>Affiliate</td>
+            <td>🟡 Priority, but limited</td>
+          </tr>
+          <tr>
+            <td>Everyone Else</td>
+            <td>🔄 Based on capacity</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>No extra setup required — NOIZ handles it in the background.</p>
+
+      <h2 id="5-viewer-device-optimization">5. Viewer Device Optimization</h2>
+      <p>NOIZ auto-detects and adjusts for:</p>
+      <ul>
+        <li>📱 Mobile playback vs desktop</li>
+        <li>🌐 Low-bandwidth or high-packet-loss connections</li>
+        <li>🖥️ 60fps+ displays and high refresh rates</li>
+      </ul>
+      <p>You don’t need to stream multiple variants — NOIZ relays + transcoding handle viewer-side optimization in real time.</p>
+
+      <h2 id="6-how-to-improve-your-latency">6. How to Improve Your Latency</h2>
+      <p>🛠 Tips for lowest stream delay:</p>
+      <ul>
+        <li>✅ Use <strong>NOIZ Studio</strong> (optimized ingest and relay sync)</li>
+        <li>🛰️ <strong>Host your own relay node</strong> (Pathweaver program)</li>
+        <li>🔓 Avoid <strong>VPNs</strong> or routers that block <strong>UDP traffic</strong></li>
+        <li>⚙️ Enable <strong>Low Latency Mode</strong> in OBS or your encoder</li>
+      </ul>
+      <p>Even without a custom relay, most creators see ~300–500ms glass-to-glass latency.</p>
+
+      <h2 id="7-faq">7. FAQ</h2>
+      <p><strong>What if my viewers are buffering a lot?</strong><br>→ Try lowering bitrate or checking your relay route in the Creator Dashboard.</p>
+      <p><strong>Can I add a delay for tournaments or speedruns?</strong><br>→ Yes — set manual delay in OBS or NOIZ Studio’s advanced settings.</p>
+      <p><strong>Is transcoding available to small/new channels?</strong><br>→ Yes, but only as capacity allows. Affiliates get priority during peak hours.</p>
+      <p><strong>Can I stream in 4K?</strong><br>→ You can — but relay and transcoding support is currently in limited beta. Watch for updates.</p>
+    </article>
+  </div>
+</div>
