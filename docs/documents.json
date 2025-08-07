@@ -661,11 +661,13 @@
   {
     "documentId": 66,
     "title": "Viewer Quest Completion FAQ",
-    "desccription": "How viewer quests work, joining, progress tracking, and rewards.",
+    "desccription": "How viewer quests work, joining, progress tracking, rewards, and Hype Moments.",
     "tags": [
       "quests",
       "viewer",
-      "faq"
+      "faq",
+      "hype",
+      "boosts"
     ]
   }
 ]
