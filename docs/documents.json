@@ -626,5 +626,16 @@
       "obs",
       "overlays"
     ]
+  },
+  {
+    "documentId": 63,
+    "title": "Category Tags and Stream Metadata Best Practices",
+    "desccription": "Guidelines for using categories, tags, and metadata to optimize discovery and quest tracking.",
+    "tags": [
+      "streaming",
+      "tags",
+      "metadata",
+      "quests"
+    ]
   }
 ]
