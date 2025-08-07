@@ -669,5 +669,16 @@
       "hype",
       "boosts"
     ]
+  },
+  {
+    "documentId": 67,
+    "title": "Plugins & Extensions: What They Do and How to Use Them",
+    "desccription": "Overview of NOIZ plugins, types, management, viewer use, and safety.",
+    "tags": [
+      "plugins",
+      "extensions",
+      "viewers",
+      "streaming"
+    ]
   }
 ]
