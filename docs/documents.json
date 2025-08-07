@@ -680,5 +680,15 @@
       "viewers",
       "streaming"
     ]
+  },
+  {
+    "documentId": 68,
+    "title": "Installing and Managing Overlays and Tools on NOIZ",
+    "desccription": "How to install overlay packs, manage overlays, and optimize performance.",
+    "tags": [
+      "overlays",
+      "tools",
+      "plugins"
+    ]
   }
 ]
