@@ -1,0 +1,94 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <blockquote>All NOIZ plugins must be safe, transparent, and sandboxed. This document outlines what plugins can and can’t do — and how the platform protects streamers and viewers from abuse.</blockquote>
+
+      <h2 id="1-why-security-matters-on-noiz">1. Why Security Matters on NOIZ</h2>
+      <p>Plugins can interact with your stream, chat, overlays, and viewer data. To ensure safety:</p>
+      <ul>
+        <li>All Marketplace plugins are sandboxed</li>
+        <li>Only verified developers can submit plugin packages</li>
+        <li>NOIZ enforces strict permission requests (similar to mobile apps or browser extensions)</li>
+      </ul>
+      <p>This prevents:</p>
+      <ul>
+        <li>Malicious redirects</li>
+        <li>Data scraping or off-platform tracking</li>
+        <li>UI hijacking or scam prompts</li>
+      </ul>
+
+      <h2 id="2-plugin-permission-levels">2. Plugin Permission Levels</h2>
+      <p>Plugins must declare access level during installation:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Access Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>🟢 Basic</td><td>Stream layout, visible overlays, plugin visuals only</td></tr>
+          <tr><td>🟡 Interactive</td><td>Viewer reactions, chat commands, public Quest stats</td></tr>
+          <tr><td>🔴 Elevated</td><td>Viewer ⚡︎dB data, sub status, clip access, leaderboard read</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="3-viewer-safety-and-consent">3. Viewer Safety &amp; Consent</h2>
+      <p>Viewers will:</p>
+      <ul>
+        <li>Be prompted before enabling any interactive plugin</li>
+        <li>See exactly what a plugin will access (e.g. “View your chat name and emotes”)</li>
+        <li>Be able to opt out globally from plugin access via:<br><strong>Settings → Privacy → Plugin Access</strong></li>
+      </ul>
+      <p><strong>⚠️ If a viewer opts out, the plugin must gracefully degrade (e.g., hide visual tracker, skip interaction).</strong></p>
+
+      <h2 id="4-developer-restrictions">4. Developer Restrictions</h2>
+      <p>Plugin developers may <strong>not</strong>:</p>
+      <ul>
+        <li>Collect off-platform data (IP, geolocation, referral source)</li>
+        <li>Require wallet or personal info outside Constellation auth</li>
+        <li>Obfuscate or dynamically change plugin behavior post-approval</li>
+        <li>Include trackers, fingerprinting libraries, or external ads</li>
+      </ul>
+      <p>Plugins <strong>must</strong>:</p>
+      <ul>
+        <li>Be signed with a valid developer ID</li>
+        <li>Pass NOIZ’s code scan (automated + manual)</li>
+        <li>Include a <code>permissions.json</code> manifest with descriptions for each request</li>
+      </ul>
+
+      <h2 id="5-plugin-reviews-and-reporting">5. Plugin Reviews &amp; Reporting</h2>
+      <p>All submitted plugins go through:</p>
+      <ul>
+        <li>✅ Static analysis (code safety, no remote script loading)</li>
+        <li>✅ Behavior simulation (plugin sandbox tests)</li>
+        <li>✅ Visual inspection (branding, maturity compliance)</li>
+      </ul>
+      <p>Users and streamers can report plugins via:</p>
+      <ul>
+        <li>Right-click plugin → “Report Plugin”</li>
+        <li>Marketplace → Report Abuse</li>
+      </ul>
+      <p>Reports are reviewed by:</p>
+      <ul>
+        <li>The Developer Trust Team</li>
+        <li>Staff Admins (for escalations)</li>
+      </ul>
+
+      <h2 id="6-revocation-and-blacklisting">6. Revocation and Blacklisting</h2>
+      <p>If a plugin is found to be unsafe:</p>
+      <ul>
+        <li>It is <strong>immediately disabled</strong> for all users</li>
+        <li>⚠️ Streamers using it are notified</li>
+        <li>The developer may be <strong>removed</strong> from Marketplace access</li>
+      </ul>
+      <p>If malicious intent is confirmed, <strong>DCT may escalate</strong> the case.</p>
+
+      <h2 id="7-faq">7. FAQ</h2>
+      <p><strong>Can plugins access my ⚡︎dB wallet?</strong><br>Only read-only, and only if you allow it</p>
+      <p><strong>Can a plugin send notifications or pop-ups?</strong><br>Yes, within the sandboxed UI</p>
+      <p><strong>What happens if a plugin breaks mid-stream?</strong><br>It auto-fails gracefully or disables</p>
+      <p><strong>Can I restrict plugin use to only subs?</strong><br>Yes — permission tiers are customizable</p>
+    </article>
+  </div>
+</div>
