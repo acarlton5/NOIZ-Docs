@@ -701,5 +701,16 @@
       "permissions",
       "safety"
     ]
+  },
+  {
+    "documentId": 70,
+    "title": "NOIZ Bot Overview",
+    "desccription": "Overview of the NOIZ Bot's moderation, naming, and command features.",
+    "tags": [
+      "bot",
+      "chat",
+      "moderation",
+      "commands"
+    ]
   }
 ]
