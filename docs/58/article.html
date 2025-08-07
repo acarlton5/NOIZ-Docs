@@ -1,0 +1,89 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <blockquote>
+        <p>Relays help your stream stay fast, global, and resilient — even if a node drops or your region has limited routing.</p>
+      </blockquote>
+
+      <h2 id="1-what-are-relay-routes-on-noiz">1. What Are Relay Routes on NOIZ?</h2>
+      <p>Relay routes connect:</p>
+      <ul>
+        <li>🎥 Your streaming tool (NOIZ Studio, OBS, etc.)</li>
+        <li>🌐 The closest or most stable <strong>NOIZ relay node</strong></li>
+        <li>👁️ Viewers watching through decentralized relay endpoints</li>
+      </ul>
+      <p>Relays are used to:</p>
+      <ul>
+        <li>Balance bandwidth across global users</li>
+        <li>Optimize <strong>glass-to-glass latency</strong></li>
+        <li>Provide <strong>redundancy</strong> in case of stream route issues</li>
+      </ul>
+      <p>This system allows low-latency streams even from remote regions.</p>
+
+      <h2 id="2-default-behavior-auto-routing">2. Default Behavior (Auto-Routing)</h2>
+      <p>By default, NOIZ uses <strong>smart automatic routing</strong>, which:</p>
+      <ul>
+        <li>Picks the <strong>nearest verified relay</strong> with best health</li>
+        <li>Adapts mid-stream if a relay underperforms</li>
+        <li>Prioritizes <strong>Pathweaver</strong> or trusted relays in your location</li>
+        <li>Requires no setup — it just works</li>
+      </ul>
+      <p>✅ Recommended for most streamers unless you’re managing your own relay node.</p>
+
+      <h2 id="3-manual-relay-selection-advanced-users">3. Manual Relay Selection (Advanced Users)</h2>
+      <p>Advanced users can override auto-routing by:</p>
+      <ul>
+        <li>Navigating to <strong>NOIZ Studio → Settings → Relay</strong></li>
+        <li>Choosing a node from the dropdown</li>
+        <li>Or pasting a <strong>custom ingest URL</strong> (if using OBS or other tools)</li>
+      </ul>
+      <p>Manual routing is useful if:</p>
+      <ul>
+        <li>You host a <strong>Pathweaver</strong> and want to lock to your own node</li>
+        <li>You're running a <strong>LAN stream</strong>, private session, or debug test</li>
+        <li>You need strict control for <strong>performance monitoring</strong></li>
+      </ul>
+      <p>Once locked manually, your stream stays on that node unless you restart or change the setting.</p>
+
+      <h2 id="4-using-your-own-relay-node">4. Using Your Own Relay Node</h2>
+      <p>If you're hosting a <strong>Pathweaver relay</strong>, you can:</p>
+      <ul>
+        <li>Select your node by its <strong>verified relay name</strong></li>
+        <li>Lock it to <strong>serve your stream directly</strong></li>
+        <li>View node diagnostics inside NOIZ Studio:
+          <ul>
+            <li>Ping</li>
+            <li>Bandwidth load</li>
+            <li>Node health status</li>
+          </ul>
+        </li>
+      </ul>
+      <p>Benefits include:</p>
+      <ul>
+        <li>Regional priority for your relay</li>
+        <li>Direct connection to your stream viewers</li>
+        <li>Enhanced routing visibility and node preference</li>
+      </ul>
+
+      <h2 id="5-fallback-failover-behavior">5. Fallback &amp; Failover Behavior</h2>
+      <p>If a relay node <strong>goes offline mid-stream</strong>:</p>
+      <ul>
+        <li>NOIZ <strong>auto-reroutes</strong> you to the next best option</li>
+        <li>Viewers experience <strong>a brief buffer skip</strong>, not a stream drop</li>
+        <li>A <strong>notification</strong> appears in NOIZ Studio if rerouting occurs</li>
+      </ul>
+      <p>Pathweavers can also:</p>
+      <ul>
+        <li>Enable <strong>relay health alerts</strong></li>
+        <li>Lock fallback options to <strong>regional clusters</strong> only</li>
+      </ul>
+      <p>No action is needed unless you want stricter control.</p>
+
+      <h2 id="6-faq">6. FAQ</h2>
+      <p><strong>Do I need to pick a relay manually?</strong><br>→ No — auto-routing works best for most users.</p>
+      <p><strong>Can I test relay quality manually?</strong><br>→ Yes — use the <strong>Diagnostics tab</strong> in NOIZ Studio.</p>
+      <p><strong>What happens if my relay crashes mid-stream?</strong><br>→ You’ll auto-failover. NOIZ maintains uptime with fallback paths.</p>
+      <p><strong>Does relay choice affect bitrate or transcoding?</strong><br>→ No — relays affect <strong>routing</strong>, not <strong>encoding</strong> or <strong>transcode tier</strong>.</p>
+    </article>
+  </div>
+</div>
