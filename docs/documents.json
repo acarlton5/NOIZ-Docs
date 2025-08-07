@@ -647,8 +647,7 @@
       "viewer",
       "streamer"
     ]
-  }
-  ,
+  },
   {
     "documentId": 65,
     "title": "How to Create a Quest Campaign (Sponsorship Guidelines & Terms)",
@@ -657,6 +656,16 @@
       "quests",
       "sponsors",
       "campaigns"
+    ]
+  },
+  {
+    "documentId": 66,
+    "title": "Viewer Quest Completion FAQ",
+    "desccription": "How viewer quests work, joining, progress tracking, and rewards.",
+    "tags": [
+      "quests",
+      "viewer",
+      "faq"
     ]
   }
 ]
