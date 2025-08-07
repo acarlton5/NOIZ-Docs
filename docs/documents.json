@@ -544,5 +544,15 @@
       "decibels",
       "support"
     ]
+  },
+  {
+    "documentId": 55,
+    "title": "Setting Up Streaming with NOIZ Studio (OBS-Fork)",
+    "desccription": "How to install, configure, and use the NOIZ Studio streaming client.",
+    "tags": [
+      "streaming",
+      "noiz-studio",
+      "setup"
+    ]
   }
 ]

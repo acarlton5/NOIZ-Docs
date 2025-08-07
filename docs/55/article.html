@@ -1,0 +1,122 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <blockquote>
+        <p>NOIZ Studio is the platform’s official streaming app, designed to make high-performance, low-latency streaming simple — whether you're brand new or a seasoned broadcaster. It’s built on an optimized fork of OBS and includes native ITG relay support, chat tools, and integrated Quest features.</p>
+      </blockquote>
+
+      <h2 id="1-what-is-noiz-studio">1. What Is NOIZ Studio?</h2>
+      <p>NOIZ Studio is a modified version of OBS (Open Broadcaster Software), enhanced specifically for the NOIZ ecosystem. It’s designed to:</p>
+      <ul>
+        <li>Connect directly to NOIZ’s ultra-low latency <strong>ITG relay network</strong></li>
+        <li>Automatically optimize video and encoding settings</li>
+        <li>Seamlessly integrate with chat, Quests, overlays, and support tools</li>
+      </ul>
+      <p>Unlike standard OBS, NOIZ Studio:</p>
+      <ul>
+        <li>Detects your region and selects the best relay node</li>
+        <li>Preconfigures your encoder and bitrate settings for ITG</li>
+        <li>Includes built-in chat, Quest controls, and stream previews</li>
+      </ul>
+
+      <h2 id="2-getting-started">2. Getting Started</h2>
+      <h3 id="21-download-launch">2.1 Download &amp; Launch</h3>
+      <ul>
+        <li>Download NOIZ Studio from your <strong>Streamer Dashboard</strong> or <a href="https://stream.noiz.gg">stream.noiz.gg</a></li>
+        <li>Install and launch the app (auto-updates are built in)</li>
+      </ul>
+      <h3 id="22-link-your-constellation-session">2.2 Link Your Constellation Session</h3>
+      <ul>
+        <li>A 6-digit token will appear on launch</li>
+        <li>Open the Constellation app → tap <strong>Active Connections</strong> → enter the code to link your account</li>
+      </ul>
+      <h3 id="23-run-first-time-setup">2.3 Run First-Time Setup</h3>
+      <p>NOIZ Studio’s Setup Wizard will guide you through:</p>
+      <ul>
+        <li>Microphone &amp; camera selection</li>
+        <li>Bandwidth &amp; encoder test</li>
+        <li>Default stream category selection</li>
+        <li>Choosing a layout template</li>
+      </ul>
+
+      <h2 id="3-stream-configuration">3. Stream Configuration</h2>
+      <p>Once linked, Studio auto-configures the following:</p>
+      <ul>
+        <li><strong>Ingest Server:</strong> Closest available ITG relay node</li>
+        <li><strong>Bitrate:</strong> Based on your test results</li>
+        <li><strong>Encoder:</strong> Prefers hardware (NVENC, AMD, etc.) if available</li>
+        <li><strong>Stream Delay:</strong> Set to <strong>0ms</strong> unless you adjust it manually</li>
+      </ul>
+      <p>You can change any setting by going to:</p>
+      <ul>
+        <li><code>Settings → Output</code></li>
+        <li><code>Settings → Stream</code></li>
+      </ul>
+
+      <h2 id="4-scenes-layouts">4. Scenes &amp; Layouts</h2>
+      <p>NOIZ Studio supports full OBS-level customization with added features:</p>
+      <ul>
+        <li>Scene collections (saved locally and to the cloud)</li>
+        <li>Source groups for easier overlay management</li>
+        <li>Plugin-ready scene elements (chat box, emotes, Quest tracker, etc.)</li>
+      </ul>
+      <p><strong>Pro Tip:</strong> Browse the built-in <strong>NOIZ Plugin Hub</strong> to install interactive overlays, theme packs, and verified widgets directly from inside the app.</p>
+
+      <h2 id="5-relay-routing">5. Relay Routing</h2>
+      <p>By default, NOIZ Studio:</p>
+      <ul>
+        <li>Automatically routes your stream to the <strong>best-performing relay node</strong></li>
+        <li>Displays your active relay status in the <strong>HUD panel</strong></li>
+        <li>Fails over silently in the event of node instability</li>
+      </ul>
+      <p>You can override the selected relay by going to:</p>
+      <ul>
+        <li><code>Settings → Advanced → Relay Selection</code></li>
+      </ul>
+      <p>If you’re a Pathweaver host, Studio will prioritize your relay node when possible.</p>
+
+      <h2 id="6-monitoring-your-stream">6. Monitoring Your Stream</h2>
+      <p>The live performance panel (top-right of Studio) shows:</p>
+      <ul>
+        <li>Bitrate stability</li>
+        <li>Frame drops</li>
+        <li>Relay ping (ms)</li>
+        <li>Chat connection health</li>
+        <li>Plugin status</li>
+      </ul>
+      <p>⚠️ If connection issues occur:</p>
+      <ul>
+        <li>NOIZ Studio will attempt <strong>automatic failover</strong> to the next-best relay</li>
+        <li>Viewers will experience no disconnects; you’ll see a HUD notification</li>
+      </ul>
+
+      <h2 id="7-stream-controls-features">7. Stream Controls &amp; Features</h2>
+      <p>Once linked to NOIZ, you’ll see new UI options:</p>
+      <ul>
+        <li><strong>Start / Stop Stream</strong> button (platform-linked)</li>
+        <li>Stream metadata panel: title, category, tags</li>
+        <li>Viewer count and ⚡︎dB support alerts</li>
+        <li>Hotkey support for future <strong>Clip creation</strong> and <strong>Quest control</strong></li>
+      </ul>
+      <p>You can still create multiple scene collections, add browser sources, and use OBS plugins as usual.</p>
+
+      <h2 id="8-frequently-asked-questions">8. Frequently Asked Questions</h2>
+      <p><strong>Can I use NOIZ Studio to stream to other platforms?</strong></p>
+      <blockquote>
+        <p>Dual streaming is supported via custom plugins, but NOIZ Studio is optimized for NOIZ-first performance.</p>
+      </blockquote>
+      <p><strong>Can I import my old OBS scenes or profiles?</strong></p>
+      <blockquote>
+        <p>Yes — on first launch, you’ll be prompted to import any existing OBS configurations.</p>
+      </blockquote>
+      <p><strong>Do I need to reinstall my plugins or VSTs?</strong></p>
+      <blockquote>
+        <p>Only if you use custom audio plugins or complex source filters. NOIZ-native plugins are included.</p>
+      </blockquote>
+      <p><strong>Is it safe to run a Pathweaver relay on the same machine?</strong></p>
+      <blockquote>
+        <p>Yes — NOIZ Studio will detect it and auto-route. Port and conflict management is handled internally.</p>
+      </blockquote>
+    </article>
+  </div>
+</div>
