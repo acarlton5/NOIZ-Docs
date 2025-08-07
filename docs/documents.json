@@ -648,4 +648,15 @@
       "streamer"
     ]
   }
+  ,
+  {
+    "documentId": 65,
+    "title": "How to Create a Quest Campaign (Sponsorship Guidelines & Terms)",
+    "desccription": "Sponsorship process, requirements, and terms for running Quest Campaigns on NOIZ.",
+    "tags": [
+      "quests",
+      "sponsors",
+      "campaigns"
+    ]
+  }
 ]
