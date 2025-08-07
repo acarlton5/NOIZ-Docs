@@ -574,5 +574,15 @@
       "latency",
       "bitrate"
     ]
+  },
+  {
+    "documentId": 58,
+    "title": "Setting Up Your Relay Route (Auto + Manual)",
+    "desccription": "How to configure relay routing automatically or manually in NOIZ Studio.",
+    "tags": [
+      "streaming",
+      "relay",
+      "routing"
+    ]
   }
 ]
