@@ -595,5 +595,16 @@
       "streaming",
       "liability"
     ]
+  },
+  {
+    "documentId": 60,
+    "title": "Co-streaming & Stream Takeovers on NOIZ",
+    "desccription": "Guidelines for co-streaming events and letting guests stream on your channel, including permissions and responsibility.",
+    "tags": [
+      "streaming",
+      "co-streaming",
+      "takeover",
+      "policy"
+    ]
   }
 ]
