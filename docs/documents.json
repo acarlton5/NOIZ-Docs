@@ -723,5 +723,16 @@
       "quests",
       "inventory"
     ]
+  },
+  {
+    "documentId": 72,
+    "title": "Viewer Milestones & Achievements",
+    "desccription": "Milestones track long-term viewer engagement across channels, quests, and support actions. They reward loyalty with cosmetic badges, achievements, and visible status in chat or your profile.",
+    "tags": [
+      "viewer",
+      "milestones",
+      "badges",
+      "achievements"
+    ]
   }
 ]
