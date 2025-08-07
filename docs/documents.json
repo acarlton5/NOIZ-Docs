@@ -637,5 +637,15 @@
       "metadata",
       "quests"
     ]
+  },
+  {
+    "documentId": 64,
+    "title": "What Are Quests? (Viewer & Streamer Challenge System)",
+    "desccription": "Challenge and rewards system for viewers and streamers.",
+    "tags": [
+      "quests",
+      "viewer",
+      "streamer"
+    ]
   }
 ]
