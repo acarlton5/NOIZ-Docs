@@ -690,5 +690,16 @@
       "tools",
       "plugins"
     ]
+  },
+  {
+    "documentId": 69,
+    "title": "Plugin Security and Access Permissions",
+    "desccription": "Guidelines for plugin security, viewer consent, developer restrictions, and reporting.",
+    "tags": [
+      "plugins",
+      "security",
+      "permissions",
+      "safety"
+    ]
   }
 ]
