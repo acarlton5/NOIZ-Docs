@@ -616,5 +616,15 @@
       "embedding",
       "branding"
     ]
+  },
+  {
+    "documentId": 62,
+    "title": "OBS Scene Guidelines for Marketplace Submissions",
+    "desccription": "Requirements for OBS scene and overlay packs submitted to the Marketplace.",
+    "tags": [
+      "marketplace",
+      "obs",
+      "overlays"
+    ]
   }
 ]

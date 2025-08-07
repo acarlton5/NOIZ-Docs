@@ -1,0 +1,124 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <blockquote>
+        <p>All NOIZ scene and overlay packs must meet platform compatibility, performance, and transparency standards. This policy protects streamers, promotes accessibility, and prevents malicious or unusable content from reaching the Marketplace.</p>
+      </blockquote>
+
+      <h2 id="1-why-these-guidelines-exist">1. Why These Guidelines Exist</h2>
+      <p>All Marketplace scene layout submissions must:</p>
+      <ul>
+        <li>Work reliably with <strong>NOIZ Studio</strong> and <strong>OBS 28+</strong></li>
+        <li>Follow visual and <strong>accessibility best practices</strong></li>
+        <li>Avoid performance-heavy or risky behavior</li>
+        <li>Disclose any <strong>plugin or third-party dependency</strong></li>
+      </ul>
+      <p>Applies to:</p>
+      <ul>
+        <li>Scene templates &amp; layout packs</li>
+        <li>Stingers and transitions</li>
+        <li>Starting/BRB/Ending screens</li>
+        <li>Plugin-integrated overlays</li>
+      </ul>
+
+      <h2 id="2-basic-compatibility-requirements">2. Basic Compatibility Requirements</h2>
+      <p><strong>All Marketplace scene assets must:</strong></p>
+      <ul>
+        <li>Be compatible with <strong>NOIZ Studio</strong> and standard <strong>OBS 28+</strong></li>
+        <li>Use common base resolutions: <strong>720p</strong>, <strong>1080p</strong>, or <strong>1440p</strong></li>
+        <li>Stay within <strong>16:9 safe zones</strong></li>
+        <li>Include a <strong>README</strong> with clear setup steps</li>
+      </ul>
+      <p><strong>Submissions will be rejected if they:</strong></p>
+      <ul>
+        <li>Force a locked resolution (e.g. 1366x768-only)</li>
+        <li>Are designed only for ultra-wide or dual monitor layouts</li>
+        <li>Require heavy shaders or filters without fallback options</li>
+      </ul>
+
+      <h2 id="3-required-folder-structure">3. Required Folder Structure</h2>
+      <p>Use the following directory format:</p>
+      <pre><code>/YourOverlayPack/
+├── README.md
+├── preview.png
+├── LICENSE.txt (optional)
+├── overlays/
+│   ├── cam_frame.png
+│   ├── alerts/
+│   ├── panels/
+│   └── transitions/
+├── scene_config.json or .overlay (if applicable)
+</code></pre>
+      <p><strong>README.md must include:</strong></p>
+      <ul>
+        <li>Setup instructions</li>
+        <li>Supported stream resolutions</li>
+        <li>Plugin compatibility (if applicable)</li>
+        <li>Artist or licensing notes</li>
+      </ul>
+
+      <h2 id="4-performance-accessibility-standards">4. Performance &amp; Accessibility Standards</h2>
+      <p>Overlays must:</p>
+      <ul>
+        <li>Use <strong>PNG</strong>, <strong>WebM</strong>, or <strong>SVG</strong> (compressed and GPU-safe)</li>
+        <li>Avoid autoplay audio or flashing effects unless toggleable</li>
+        <li>Be colorblind-aware (avoid red/green conflicts)</li>
+        <li>Stay under <strong>10% average GPU usage</strong> on:
+          <ul>
+            <li>NVIDIA GTX 1060 or newer</li>
+            <li>Ryzen 5 3600 or similar</li>
+            <li>8GB RAM minimum</li>
+          </ul>
+        </li>
+      </ul>
+      <blockquote>
+        <p>Assets will be tested on NOIZ Studio’s baseline spec before approval.</p>
+      </blockquote>
+
+      <h2 id="5-plugin-integration-guidelines">5. Plugin Integration Guidelines</h2>
+      <p>If your overlay includes plugin-driven or interactive components:</p>
+      <p><strong>You must:</strong></p>
+      <ul>
+        <li>Use the <strong>NOIZ Plugin SDK v1+</strong></li>
+        <li>Declare all external services, if any</li>
+        <li>Provide a plugin manifest + install guide</li>
+        <li>Include a clear permissions declaration</li>
+      </ul>
+      <p><strong>You must NOT:</strong></p>
+      <ul>
+        <li>Require third-party logins unless documented</li>
+        <li>Track users or store data without consent</li>
+        <li>Include hidden scripts, trackers, or unauthorized integrations</li>
+      </ul>
+
+      <h2 id="6-design-best-practices">6. Design Best Practices</h2>
+      <p>Highly recommended for creators:</p>
+      <ul>
+        <li>Use modular layers (cam, chat, alerts = separate)</li>
+        <li>Provide light/dark theme variants</li>
+        <li>Leave margin for mobile-friendly scaling</li>
+        <li>Include editable source files (PSD, AE, etc.) — optional but appreciated</li>
+        <li>Ensure readable typography and text contrast</li>
+      </ul>
+
+      <h2 id="7-prohibited-elements">7. Prohibited Elements</h2>
+      <p>Submissions will be rejected if they:</p>
+      <ul>
+        <li>Include unlicensed game logos, streamer emotes, or third-party IP</li>
+        <li>Contain Twitch, YouTube, Kick, or other platform branding</li>
+        <li>Reference gambling, crypto, or adult service sponsors</li>
+        <li>Obscure the NOIZ watermark, plugin UI, or player branding</li>
+      </ul>
+
+      <h2 id="8-faq">8. FAQ</h2>
+      <h3 id="faq-game-fandom">Can I sell templates based on a game or fandom?</h3>
+      <p>Only if you have commercial rights or the asset is generic (e.g., “retro sci-fi” is okay, “Zelda layout” is not).</p>
+      <h3 id="faq-commissions">Can I link to my commission or Patreon page?</h3>
+      <p>Yes, in your Marketplace artist profile — not inside the overlay.</p>
+      <h3 id="faq-filters-vst">Can I include OBS filters or VST presets?</h3>
+      <p>Yes — but warn users about OBS version compatibility.</p>
+      <h3 id="faq-update-overlay">Can I update my overlay after it's published?</h3>
+      <p>Yes — version updates are supported and visible to all prior supporters.</p>
+    </article>
+  </div>
+</div>
