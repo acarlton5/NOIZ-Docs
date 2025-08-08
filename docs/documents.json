@@ -764,5 +764,15 @@
       "sponsors",
       "campaigns"
     ]
+  },
+  {
+    "documentId": 76,
+    "title": "NOIZ Artist Program Overview",
+    "desccription": "Overview of the NOIZ Artist Program tiers, benefits, and participation guidelines.",
+    "tags": [
+      "artist",
+      "program",
+      "marketplace"
+    ]
   }
 ]
