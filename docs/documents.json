@@ -804,5 +804,16 @@
       "monetization",
       "payouts"
     ]
+  },
+  {
+    "documentId": 80,
+    "title": "Marketplace Asset Guidelines (Overlays, Audio, Plugins, etc.)",
+    "desccription": "Requirements for overlay packs, audio, and plugin-linked assets in the NOIZ Marketplace.",
+    "tags": [
+      "artist",
+      "marketplace",
+      "assets",
+      "guidelines"
+    ]
   }
 ]
