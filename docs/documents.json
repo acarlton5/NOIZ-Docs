@@ -878,5 +878,15 @@
       "relay",
       "rewards"
     ]
+  },
+  {
+    "documentId": 87,
+    "title": "Relay Node Blacklist Policy",
+    "desccription": "Policy for relay nodes with enforcement, appeals, and compliance.",
+    "tags": [
+      "pathweaver",
+      "relay",
+      "policy"
+    ]
   }
 ]
