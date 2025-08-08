@@ -794,5 +794,15 @@
       "policy",
       "commission"
     ]
+  },
+  {
+    "documentId": 79,
+    "title": "Artist Monetization & Payout Details",
+    "desccription": "How artists earn ⚡︎dB, manage allocations, and cash out safely.",
+    "tags": [
+      "artist",
+      "monetization",
+      "payouts"
+    ]
   }
 ]
