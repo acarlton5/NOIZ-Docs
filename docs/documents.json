@@ -734,5 +734,15 @@
       "badges",
       "achievements"
     ]
+  },
+  {
+    "documentId": 73,
+    "title": "Referral Badges & Ambassador Criteria",
+    "desccription": "Explains referral badges, tiers, and ambassador eligibility criteria.",
+    "tags": [
+      "referral",
+      "badges",
+      "ambassador"
+    ]
   }
 ]
