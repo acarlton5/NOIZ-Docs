@@ -848,5 +848,15 @@
       "licensing",
       "rights"
     ]
+  },
+  {
+    "documentId": 84,
+    "title": "Content Moderation in the Marketplace",
+    "desccription": "How moderation ensures Marketplace submissions stay safe, legal, and compliant.",
+    "tags": [
+      "marketplace",
+      "moderation",
+      "policy"
+    ]
   }
 ]
