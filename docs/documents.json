@@ -837,5 +837,16 @@
       "reviews",
       "policy"
     ]
+  },
+  {
+    "documentId": 83,
+    "title": "Asset Licensing & Rights Disclosure",
+    "desccription": "Guidelines for licensing requirements, tiers, third-party components, and reporting violations on NOIZ Marketplace.",
+    "tags": [
+      "artist",
+      "marketplace",
+      "licensing",
+      "rights"
+    ]
   }
 ]
