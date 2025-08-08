@@ -744,5 +744,15 @@
       "badges",
       "ambassador"
     ]
+  },
+  {
+    "documentId": 74,
+    "title": "Quest Progress Manipulation & Cheating Policy",
+    "desccription": "Rules against quest progress spoofing, automation, and abuse for viewers, streamers, and developers.",
+    "tags": [
+      "quests",
+      "policy",
+      "cheating"
+    ]
   }
 ]
