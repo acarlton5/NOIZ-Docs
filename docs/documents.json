@@ -868,5 +868,15 @@
       "relay",
       "infrastructure"
     ]
+  },
+  {
+    "documentId": 86,
+    "title": "Relay Rewards & Performance Tiers",
+    "desccription": "How Pathweaver relay nodes earn rewards based on uptime and traffic tiers.",
+    "tags": [
+      "pathweaver",
+      "relay",
+      "rewards"
+    ]
   }
 ]
