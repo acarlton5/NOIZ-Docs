@@ -858,5 +858,15 @@
       "moderation",
       "policy"
     ]
+  },
+  {
+    "documentId": 85,
+    "title": "Pathweaver Role Overview",
+    "desccription": "Responsibilities, rewards, and requirements for Pathweaver relay node operators.",
+    "tags": [
+      "pathweaver",
+      "relay",
+      "infrastructure"
+    ]
   }
 ]
