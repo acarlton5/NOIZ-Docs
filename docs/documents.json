@@ -826,5 +826,16 @@
       "listing",
       "commission"
     ]
+  },
+  {
+    "documentId": 82,
+    "title": "Marketplace Ratings, Reviews, and Dispute Policy",
+    "desccription": "Guidelines for ratings, reviews, dispute resolution, and artist protections in the NOIZ Marketplace.",
+    "tags": [
+      "marketplace",
+      "ratings",
+      "reviews",
+      "policy"
+    ]
   }
 ]
