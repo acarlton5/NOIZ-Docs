@@ -918,5 +918,16 @@
       "relay",
       "policy"
     ]
+  },
+
+  {
+    "documentId": 91,
+    "title": "Developer Role Overview (Contracted or Quest-Based)",
+    "desccription": "Responsibilities, rewards, and application criteria for community developers.",
+    "tags": [
+      "developer",
+      "plugins",
+      "marketplace"
+    ]
   }
 ]
