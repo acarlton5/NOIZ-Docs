@@ -1,0 +1,122 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <h2 id="why-node-security-matters">Why Node Security Matters</h2>
+      <p>Relay nodes are part of NOIZ’s managed infrastructure mesh. If a node is compromised, it can:</p>
+      <ul>
+        <li>Drop or corrupt stream packets</li>
+        <li>Leak routing metadata or handshake details</li>
+        <li>Degrade platform reliability</li>
+        <li>Trigger auto-blacklisting or loss of ⚡︎dB rewards</li>
+      </ul>
+      <p>While nodes never access personal viewer data or raw stream content, good security practices protect:</p>
+      <ul>
+        <li>Viewer privacy</li>
+        <li>Consistent performance</li>
+        <li>Pathweaver eligibility for rewards and milestones</li>
+      </ul>
+
+      <h2 id="core-security-principles">Core Security Principles</h2>
+      <ul>
+        <li>Host relays in stable, controlled environments</li>
+        <li>Use <strong>only</strong> NOIZ-signed binaries and official updates</li>
+        <li>Restrict network exposure via firewall and allowed ports</li>
+        <li>Keep relay software fully updated</li>
+        <li>Never alter routing code or attempt to force traffic prioritization</li>
+      </ul>
+
+      <h2 id="system-level-hardening">System-Level Hardening</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Best Practice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>OS &amp; Patching</strong></td>
+            <td>Use LTS OS versions (e.g., Ubuntu LTS) and update regularly</td>
+          </tr>
+          <tr>
+            <td><strong>Firewall</strong></td>
+            <td>Allow only required ports (3 default, defined per binary)</td>
+          </tr>
+          <tr>
+            <td><strong>User Privileges</strong></td>
+            <td>Run under a non-root user account</td>
+          </tr>
+          <tr>
+            <td><strong>Logging</strong></td>
+            <td>Keep only basic relay logs — never store payload or headers</td>
+          </tr>
+          <tr>
+            <td><strong>SSH Access</strong></td>
+            <td>Disable password login, use SSH keys only</td>
+          </tr>
+          <tr>
+            <td><strong>Monitoring</strong></td>
+            <td>Use uptime monitors to verify health, not inspect content</td>
+          </tr>
+        </tbody>
+      </table>
+      <blockquote>
+        <p>NOIZ does not manage your server environment — operators are responsible for system-level maintenance.</p>
+      </blockquote>
+
+      <h2 id="token-config-security">Token &amp; Config Security</h2>
+      <ul>
+        <li>Treat your <strong>Node Token</strong> like a password — do not share it</li>
+        <li>Never post configs or tokens publicly (e.g., GitHub repos)</li>
+        <li>Restrict config file access to the relay user only</li>
+        <li>Rotate tokens (<code>--rotate-token</code>) immediately if compromised</li>
+      </ul>
+      <p>⚠️ Exposing or embedding your token in public scripts is grounds for instant relay removal.</p>
+
+      <h2 id="preventing-abuse">Preventing Abuse</h2>
+      <p>Relays must <strong>not</strong>:</p>
+      <ul>
+        <li>Route traffic for unrelated video services (e.g., YouTube, Kick)</li>
+        <li>Replay or locally cache stream data</li>
+        <li>Alter source headers or fake latency/performance metrics</li>
+        <li>Inspect encrypted payloads — relays forward content only</li>
+      </ul>
+      <p>Attempts to bypass these rules may result in blacklisting and forfeiture of ⚡︎dB rewards.</p>
+
+      <h2 id="monitoring-safely">Monitoring Safely</h2>
+      <p>Allowed:</p>
+      <ul>
+        <li>Use NOIZ’s web dashboard for performance metrics</li>
+        <li>Run private Grafana/Prometheus monitors</li>
+        <li>Enable private alerts for downtime or crashes</li>
+      </ul>
+      <p>Not allowed:</p>
+      <ul>
+        <li>Public monitoring dashboards</li>
+        <li>Embedding nodes in public CDNs or free hosting layers</li>
+        <li>Auto-scaling with unvetted IP ranges or unknown instances</li>
+      </ul>
+
+      <h2 id="incident-response">Incident Response</h2>
+      <p>If NOIZ flags your node:</p>
+      <ul>
+        <li>You’ll see a dashboard alert with issue details</li>
+        <li>Severe issues may trigger auto-disable or token revocation</li>
+        <li>You may:</li>
+      </ul>
+      <ul>
+        <li>Patch your configuration</li>
+        <li>Rotate credentials</li>
+        <li>Reapply after the required cool-down period</li>
+      </ul>
+
+      <h2 id="faq">FAQ</h2>
+      <ul>
+        <li><strong>Can I run behind Cloudflare or VPN?</strong> → No — nodes must be directly routable for live stream paths.</li>
+        <li><strong>Can I host multiple relays on one machine?</strong> → Not recommended — can cause port and stability conflicts.</li>
+        <li><strong>Can I run on public or shared computers?</strong> → No — violates operational security standards.</li>
+        <li><strong>Can I modify the UI or handshake logs?</strong> → No — relays are a secure, closed routing layer.</li>
+      </ul>
+    </article>
+  </div>
+</div>
