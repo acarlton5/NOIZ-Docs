@@ -969,5 +969,15 @@
       "security",
       "privacy"
     ]
+  },
+  {
+    "documentId": 96,
+    "title": "Developer Monetization & Usage Tiers",
+    "desccription": "How developers earn ⚡︎dB, usage tiers, and monetization rules.",
+    "tags": [
+      "developer",
+      "monetization",
+      "tiers"
+    ]
   }
 ]
