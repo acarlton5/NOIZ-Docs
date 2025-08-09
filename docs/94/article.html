@@ -1,0 +1,100 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <h2 id="1-what-these-terms-cover">1. What These Terms Cover</h2>
+      <p>These terms govern:</p>
+      <ul>
+        <li>How you may use the <strong>NOIZ Plugin SDK</strong></li>
+        <li>The acceptable behavior and structure of submitted plugins</li>
+        <li>What permissions and limitations apply</li>
+        <li>Enforcement consequences for violations</li>
+      </ul>
+      <p>All developers must agree to these terms before accessing the SDK or submitting plugins to the Marketplace.</p>
+
+      <h2 id="2-license-usage-rights">2. License &amp; Usage Rights</h2>
+      <ul>
+        <li>The SDK is licensed for <strong>non-exclusive use</strong> on the NOIZ platform only</li>
+        <li>You may build plugins for:
+          <ul>
+            <li>Personal use</li>
+            <li>Streamer collaboration</li>
+            <li>Marketplace listing (via unlocks)</li>
+          </ul>
+        </li>
+        <li>You may <strong>not</strong> distribute the SDK or its runtime components off-platform</li>
+        <li>Any tools built with the SDK must be submitted via the <strong>official Marketplace system</strong> before public use in streams</li>
+        <li>You retain full ownership of the code you write — but NOIZ retains platform-specific licensing to:
+          <ul>
+            <li>Run your plugin on streamer pages</li>
+            <li>Display plugin UI in overlays</li>
+            <li>Control distribution and security sandbox behavior</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2 id="3-prohibited-behaviors">3. Prohibited Behaviors</h2>
+      <p>Plugins may <strong>not</strong>:</p>
+      <ul>
+        <li>Attempt to bypass NOIZ security sandboxing</li>
+        <li>Access personal viewer data, IP addresses, or browser fingerprints</li>
+        <li>Trigger ⚡︎dB actions without a viewer’s direct input</li>
+        <li>Play offensive content, loud audio, or flashing images without clear warnings</li>
+        <li>Fake stream events (e.g., simulate real tips or subs)</li>
+        <li>Contact unauthorized external APIs or embed off-platform analytics</li>
+      </ul>
+      <p>Violations may result in plugin removal, loss of Developer badge, or account action.</p>
+
+      <h2 id="4-permitted-capabilities">4. Permitted Capabilities</h2>
+      <p>Plugins <strong>may</strong>:</p>
+      <ul>
+        <li>React to verified NOIZ stream events (via official hooks)</li>
+        <li>Request permissions to read from chat, overlay state, or viewer unlocks</li>
+        <li>Trigger visuals or sound if initiated by streamers/viewers</li>
+        <li>Offer configuration UIs for appearance or timing</li>
+        <li>Respect cooldowns, unlock costs, and trigger limits</li>
+      </ul>
+      <p>All features must be declared in the plugin’s <strong>manifest file</strong> — undisclosed behavior will result in rejection.</p>
+
+      <h2 id="5-db-monetization-restrictions">5. ⚡︎dB &amp; Monetization Restrictions</h2>
+      <ul>
+        <li>Plugins may be listed for ⚡︎dB <strong>unlocks</strong>, not for direct monetary sale</li>
+        <li>⚡︎dB is a <strong>digital support token</strong>, not cash</li>
+        <li>Plugin unlocks are non-refundable</li>
+        <li>You may <strong>not</strong> charge viewers externally for plugin access</li>
+        <li>You may <strong>not</strong> accept crypto or fiat payments for plugin usage</li>
+        <li>All rewards and unlocks must occur <strong>within NOIZ</strong>, using approved systems</li>
+      </ul>
+
+      <h2 id="6-data-handling-privacy">6. Data Handling &amp; Privacy</h2>
+      <p>Plugins must follow NOIZ’s <strong>platform-wide data policy</strong>:</p>
+      <ul>
+        <li>No persistent storage beyond the active session</li>
+        <li>No tracking or fingerprinting</li>
+        <li>No attempts to infer personal identity from behavior</li>
+        <li>No reading of private chat messages, wallet details, or full inventory</li>
+        <li>Any plugin requiring access to viewer unlocks or input must prompt <strong>opt-in consent</strong> first</li>
+      </ul>
+
+      <h2 id="7-updates-enforcement">7. Updates &amp; Enforcement</h2>
+      <p>NOIZ reserves the right to:</p>
+      <ul>
+        <li>Modify SDK structure, hooks, or runtime at any time</li>
+        <li>Disable or sandbox plugins that cause performance issues or policy violations</li>
+        <li>Enforce cooldowns, mute repeated triggers, or throttle heavy resource use</li>
+      </ul>
+      <p>We may also flag developers for:</p>
+      <ul>
+        <li>Submitting misleading or malicious plugins</li>
+        <li>Skipping required SDK components</li>
+        <li>Attempting to circumvent Marketplace moderation</li>
+      </ul>
+
+      <h2 id="8-faq">8. FAQ</h2>
+      <p><strong>Can I fork the SDK?</strong> → Yes — for internal use only; you may not distribute modified versions.</p>
+      <p><strong>Can I publish NOIZ plugins on other platforms?</strong> → No — the SDK is NOIZ-only.</p>
+      <p><strong>Can I monetize plugins outside NOIZ?</strong> → No — monetization must occur within NOIZ using ⚡︎dB.</p>
+      <p><strong>Can I bundle plugins with overlays or audio packs?</strong> → Yes — but all assets must be reviewed together.</p>
+      <p><strong>What if someone copies my plugin?</strong> → Report it through the Marketplace — NOIZ will investigate and compare listings.</p>
+    </article>
+  </div>
+</div>
