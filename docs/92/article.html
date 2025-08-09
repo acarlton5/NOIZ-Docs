@@ -1,0 +1,103 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <h2 id="1-what-is-the-noiz-plugin-sdk">1. What Is the NOIZ Plugin SDK</h2>
+      <p>The NOIZ Plugin SDK allows Developers to build custom interactive features that streamers can add to their broadcasts, including:</p>
+      <ul>
+        <li>Real-time overlays (polls, chat reactions, quest progress bars)</li>
+        <li>Viewer-triggered effects (⚡︎dB-based events, emote bursts, animations)</li>
+        <li>Token-based unlockables tied to stream activity</li>
+        <li>Custom HUD elements or gameplay integrations</li>
+      </ul>
+      <p>All plugins run <strong>sandboxed</strong> in-browser or via NOIZ Studio and must follow platform-safe and security-approved practices.</p>
+
+      <h2 id="2-plugin-types">2. Plugin Types</h2>
+      <table>
+        <thead>
+          <tr><th>Plugin Type</th><th>Example Use Case</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Overlay Plugins</strong></td><td>Animated banners, follower counters, polls</td></tr>
+          <tr><td><strong>Interaction Plugins</strong></td><td>⚡︎dB-triggered animations, emoji storms</td></tr>
+          <tr><td><strong>Quest Plugins</strong></td><td>Show quest progress or viewer milestones</td></tr>
+          <tr><td><strong>Audio Plugins</strong></td><td>Play alert tones, ambient effects</td></tr>
+          <tr><td><strong>Utility Plugins</strong></td><td>Token counters, timers, vote tallies</td></tr>
+        </tbody>
+      </table>
+      <p>Plugins may run <strong>passively</strong> (always visible) or <strong>reactively</strong> (triggered by chat input, ⚡︎dB events, or platform signals).</p>
+
+      <h2 id="3-sdk-access">3. SDK Access</h2>
+      <p>To access the SDK, you must:</p>
+      <ol>
+        <li>Be a <strong>verified Developer</strong></li>
+        <li>Accept the <strong>Plugin SDK Terms</strong></li>
+        <li>Navigate to:
+          <ul>
+            <li><strong>Developers → Plugin Builder → Get SDK</strong></li>
+          </ul>
+        </li>
+      </ol>
+      <p>From there, you can:</p>
+      <ul>
+        <li>Download or fork the boilerplate kit</li>
+        <li>Connect to:
+          <ul>
+            <li>Chat signals</li>
+            <li>Viewer ⚡︎dB triggers</li>
+            <li>Stream status (live, hype, featured, etc.)</li>
+            <li>Inventory unlock events</li>
+          </ul>
+        </li>
+      </ul>
+      <p>The SDK supports JavaScript (React, Vue, or Vanilla), WebSocket hooks, and the NOIZ Event API.</p>
+
+      <h2 id="4-plugin-lifecycle">4. Plugin Lifecycle</h2>
+      <p>Each plugin follows a structured process:</p>
+      <ol>
+        <li><strong>Local Development</strong> — preview in dev mode</li>
+        <li><strong>Sandbox Testing</strong> — stream-safe environment without live chat posting</li>
+        <li><strong>Moderation Submission</strong> — for Marketplace listing or Quest integration</li>
+        <li><strong>Approval &amp; Release</strong> — streamers can install the plugin</li>
+        <li><strong>Ongoing Updates</strong> — versioning and update notes visible to users</li>
+      </ol>
+      <p>Plugins may be:</p>
+      <ul>
+        <li><strong>Free</strong></li>
+        <li><strong>Unlocked via ⚡︎dB</strong></li>
+        <li><strong>Included in platform event packs</strong></li>
+      </ul>
+
+      <h2 id="5-integration-features">5. Integration Features</h2>
+      <p>The NOIZ Plugin SDK supports:</p>
+      <ul>
+        <li><strong>Reactive listeners</strong> — <code>onTip</code>, <code>onSub</code>, <code>onQuestComplete</code>, <code>onKeyword</code></li>
+        <li><strong>Event triggers</strong> — <code>triggerOverlay</code>, <code>sendReaction</code>, <code>setCooldown</code></li>
+        <li><strong>Chat-safe callbacks</strong> — <code>chatEvent</code>, <code>viewerId</code>, <code>hasUnlock</code></li>
+        <li><strong>UI placement options</strong> — dock, banner, fullscreen, pinned corner</li>
+      </ul>
+      <p>Each plugin must clearly define:</p>
+      <ul>
+        <li>Resource use (CPU/network)</li>
+        <li>Whether it uses audio or visual effects</li>
+        <li>Any required permissions</li>
+      </ul>
+
+      <h2 id="6-security-model">6. Security Model</h2>
+      <p>Plugins are:</p>
+      <ul>
+        <li>Sandboxed in secure iframes or OBS layers</li>
+        <li>Prohibited from collecting personal data or browser/device info</li>
+        <li>Blocked from external requests unless pre-approved</li>
+        <li>Audited both automatically and manually for security compliance</li>
+      </ul>
+      <p>⚠️ <strong>Bypassing security layers</strong> will result in immediate removal and Developer badge revocation.</p>
+
+      <h2 id="7-faq">7. FAQ</h2>
+      <p><strong>Can I submit multiple plugins?</strong> → Yes, but each must go through approval individually.</p>
+      <p><strong>Can I monetize my plugin?</strong> → Yes, via ⚡︎dB unlocks or Dev Quest rewards.</p>
+      <p><strong>Can I update a plugin without review?</strong> → No — all changes require a moderation cycle.</p>
+      <p><strong>Can streamers customize plugin visuals?</strong> → Yes — if you provide editable config options.</p>
+      <p><strong>Is the SDK open source?</strong> → Core SDK tooling is public; runtime environment is proprietary.</p>
+    </article>
+  </div>
+</div>

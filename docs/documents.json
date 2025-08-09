@@ -929,5 +929,15 @@
       "plugins",
       "marketplace"
     ]
+  },
+  {
+    "documentId": 92,
+    "title": "Interactive Plugin SDK Overview",
+    "desccription": "How the NOIZ Plugin SDK lets developers build interactive overlays, events, and secure integrations.",
+    "tags": [
+      "developer",
+      "plugins",
+      "sdk"
+    ]
   }
 ]
