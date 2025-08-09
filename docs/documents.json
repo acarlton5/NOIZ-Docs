@@ -93,8 +93,8 @@
   },
   {
     "documentId": 10,
-    "title": "Earning Before Affiliate \u2013 What You Can Do",
-    "desccription": "How to earn \u26a1\ufe0edB before reaching Affiliate status.",
+    "title": "Earning Before Affiliate – What You Can Do",
+    "desccription": "How to earn ⚡︎dB before reaching Affiliate status.",
     "tags": [
       "monetization",
       "affiliate",
@@ -195,7 +195,7 @@
   {
     "documentId": 20,
     "title": "Earnings Dashboard FAQ (My Loot)",
-    "desccription": "FAQ for using the My Loot dashboard, tracking \u26a1\ufe0edB, and cashout eligibility.",
+    "desccription": "FAQ for using the My Loot dashboard, tracking ⚡︎dB, and cashout eligibility.",
     "tags": [
       "monetization",
       "dashboard",
@@ -225,7 +225,7 @@
   {
     "documentId": 23,
     "title": "Constellation Linking, Custody, and Withdrawals",
-    "desccription": "How Constellation handles account linking, Decibel custody, and \u26a1\ufe0edB withdrawals.",
+    "desccription": "How Constellation handles account linking, Decibel custody, and ⚡︎dB withdrawals.",
     "tags": [
       "constellation",
       "db",
@@ -477,7 +477,7 @@
   },
   {
     "documentId": 48,
-    "title": "How DCT Reviews Reports & Makes Decisions \u2014 Section Breakdown",
+    "title": "How DCT Reviews Reports & Makes Decisions — Section Breakdown",
     "desccription": "Breakdown of DCT review process, actions, and appeal guidelines.",
     "tags": [
       "moderation",
@@ -497,7 +497,7 @@
   },
   {
     "documentId": 50,
-    "title": "When Cases Are Escalated to Staff Admins \u2014 Full Policy",
+    "title": "When Cases Are Escalated to Staff Admins — Full Policy",
     "desccription": "Policy on escalation to Staff Admins, their authority, and how to request review.",
     "tags": [
       "moderation",
@@ -507,7 +507,7 @@
   },
   {
     "documentId": 51,
-    "title": "DCT Tools, Powers, and Limitations \u2014 Full Policy",
+    "title": "DCT Tools, Powers, and Limitations — Full Policy",
     "desccription": "Full policy on DCT enforcement tools, authority, and limits.",
     "tags": [
       "moderation",
@@ -517,7 +517,7 @@
   },
   {
     "documentId": 52,
-    "title": "DCT Transparency Reports & Enforcement History \u2014 Full Policy",
+    "title": "DCT Transparency Reports & Enforcement History — Full Policy",
     "desccription": "How moderation transparency reports work and how enforcement history is tracked.",
     "tags": [
       "moderation",
@@ -557,7 +557,7 @@
   },
   {
     "documentId": 56,
-    "title": "Dual Streaming: What\u2019s Allowed and What\u2019s Not",
+    "title": "Dual Streaming: What’s Allowed and What’s Not",
     "desccription": "Guidelines for simulcasting your NOIZ streams to other platforms.",
     "tags": [
       "streaming",
@@ -610,7 +610,7 @@
   {
     "documentId": 61,
     "title": "Embedding NOIZ Streams on External Sites",
-    "desccription": "How to share your stream across the web \u2014 safely and effectively",
+    "desccription": "How to share your stream across the web — safely and effectively",
     "tags": [
       "streaming",
       "embedding",
@@ -798,7 +798,7 @@
   {
     "documentId": 79,
     "title": "Artist Monetization & Payout Details",
-    "desccription": "How artists earn \u26a1\ufe0edB, manage allocations, and cash out safely.",
+    "desccription": "How artists earn ⚡︎dB, manage allocations, and cash out safely.",
     "tags": [
       "artist",
       "monetization",
@@ -957,6 +957,17 @@
       "developer",
       "plugins",
       "policy"
+    ]
+  },
+  {
+    "documentId": 95,
+    "title": "Plugin Security & Privacy Guidelines",
+    "desccription": "Security and privacy requirements for NOIZ plugins.",
+    "tags": [
+      "developer",
+      "plugins",
+      "security",
+      "privacy"
     ]
   }
 ]

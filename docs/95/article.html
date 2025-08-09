@@ -1,0 +1,106 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <h2 id="1-why-security-and-privacy-matter">1. Why Security and Privacy Matter</h2>
+      <p>Plugins are powerful tools that can:</p>
+      <ul>
+        <li>React to live stream events</li>
+        <li>Interact with viewers and chat</li>
+        <li>Trigger overlays, visuals, and sounds</li>
+        <li>Manage ⚡︎dB-based triggers</li>
+      </ul>
+      <p>But they also introduce risks if mishandled, including:</p>
+      <ul>
+        <li>Stream disruption or instability</li>
+        <li>Viewer annoyance, harm, or exploitation</li>
+        <li>Unauthorized data collection</li>
+        <li>Platform policy or legal violations</li>
+      </ul>
+      <p>These guidelines exist to protect <strong>streamers, viewers, and developers</strong> while maintaining a safe, trusted plugin ecosystem.</p>
+      <h2 id="2-security-requirements">2. Security Requirements</h2>
+      <p>All plugins must:</p>
+      <ul>
+        <li>Run in a <strong>sandboxed environment</strong> (no root-level or OS access)</li>
+        <li>Use only the <strong>NOIZ-provided SDK APIs</strong></li>
+        <li>Avoid accessing browser internals (DOM, cookies, storage, etc.)</li>
+        <li>Fail gracefully if a hook or API is unavailable</li>
+        <li>Avoid creating persistent outbound connections unless <strong>pre-approved</strong></li>
+      </ul>
+      <p>Plugins must <strong>not</strong>:</p>
+      <ul>
+        <li>Inject JavaScript into other plugin layers</li>
+        <li>Trigger full-page overlays or site redirects</li>
+        <li>Open pop-ups, elevate iframes, or hijack browser permissions</li>
+        <li>Access stream content, viewer IPs, or external domains without explicit approval</li>
+      </ul>
+      <h2 id="3-privacy-rules">3. Privacy Rules</h2>
+      <p>Plugins must never:</p>
+      <ul>
+        <li>Record user input (keyboard, mouse, microphone)</li>
+        <li>Log viewer behavior (clicks, dwell time, scrolling patterns)</li>
+        <li>Attempt to infer identity from geography, unlock patterns, or behavior</li>
+        <li>Store unique identifiers in cookies or local storage</li>
+        <li>Use fingerprinting, tracking pixels, or hidden analytics scripts</li>
+      </ul>
+      <p>All interaction must be:</p>
+      <ul>
+        <li>Voluntary</li>
+        <li>Session-scoped only (no persistent tracking)</li>
+      </ul>
+      <h2 id="4-db-trigger-safeguards">4. ⚡︎dB Trigger Safeguards</h2>
+      <p>If your plugin uses ⚡︎dB for triggers or effects:</p>
+      <ul>
+        <li>Triggers must be <strong>viewer-initiated</strong> (no automatic firing)</li>
+        <li>Cooldowns must be respected (per session and per viewer)</li>
+        <li>The ⚡︎dB unlock cost must be clearly displayed before activation</li>
+        <li>Effects must auto-timeout or be reversible (no permanent overlays)</li>
+        <li>Never simulate ⚡︎dB activity (e.g., fake tip alerts) — all triggers must use the <strong>real NOIZ API</strong></li>
+      </ul>
+      <h2 id="5-audio-visual-safety">5. Audio &amp; Visual Safety</h2>
+      <p>For plugins that play audio or display visual effects:</p>
+      <ul>
+        <li>Respect browser volume norms (no auto-blast sounds)</li>
+        <li>Warn users before flashing/strobing effects</li>
+        <li>Sudden loud or horror-trigger content must be <strong>opt-in only</strong></li>
+        <li>Ambient or looping sounds must include a disable toggle</li>
+        <li>Content flagged for epilepsy risk, offensive language, or visual spam will be removed</li>
+      </ul>
+      <h2 id="6-misuse-exploit-handling">6. Misuse &amp; Exploit Handling</h2>
+      <p>Plugins found to:</p>
+      <ul>
+        <li>Hijack overlays</li>
+        <li>Trigger multiple effects per single ⚡︎dB unlock</li>
+        <li>Auto-activate on stream start without viewer input</li>
+        <li>Imitate core NOIZ UI or Partner/role badges</li>
+        <li>Trigger “fake events” to mislead viewers</li>
+      </ul>
+      <p>…will be immediately <strong>delisted</strong>, and the developer may face:</p>
+      <ul>
+        <li>Developer badge removal</li>
+        <li>Temporary or permanent Marketplace suspension</li>
+        <li>Account-level enforcement</li>
+      </ul>
+      <h2 id="7-audit-process">7. Audit Process</h2>
+      <p>NOIZ regularly audits active plugins for:</p>
+      <ul>
+        <li>Security violations</li>
+        <li>Unexpected or undisclosed behavior</li>
+        <li>High or abnormal resource use</li>
+        <li>Viewer complaints or abuse reports</li>
+      </ul>
+      <p>Developers may be asked to:</p>
+      <ul>
+        <li>Patch their code</li>
+        <li>Disable specific features</li>
+        <li>Submit activity logs for review</li>
+        <li>Accept temporary unlisting during moderation</li>
+      </ul>
+      <h2 id="8-faq">8. FAQ</h2>
+      <p><strong>Can I use third-party audio libraries?</strong> → Yes, if fully licensed and free of tracking components.</p>
+      <p><strong>Can I store user settings between sessions?</strong> → Only through NOIZ-approved config APIs.</p>
+      <p><strong>Can my plugin connect to outside websites?</strong> → Only with prior approval (e.g., for dynamic assets).</p>
+      <p><strong>Can I monetize a plugin with crypto?</strong> → No — all monetization must use ⚡︎dB inside NOIZ.</p>
+      <p><strong>What happens if I break these rules?</strong> → Plugin removal, Developer badge loss, and/or account action.</p>
+    </article>
+  </div>
+</div>
