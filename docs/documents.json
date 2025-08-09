@@ -908,5 +908,15 @@
       "relay",
       "security"
     ]
+  },
+  {
+    "documentId": 90,
+    "title": "Node Host Code of Conduct & Terms",
+    "desccription": "Rules and expectations for Pathweaver relay node hosts.",
+    "tags": [
+      "pathweaver",
+      "relay",
+      "policy"
+    ]
   }
 ]
