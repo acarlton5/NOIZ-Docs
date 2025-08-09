@@ -898,5 +898,15 @@
       "relay",
       "network"
     ]
+  },
+  {
+    "documentId": 89,
+    "title": "Relay Node Security Best Practices",
+    "desccription": "Security guidelines for relay nodes to protect privacy, performance, and rewards.",
+    "tags": [
+      "pathweaver",
+      "relay",
+      "security"
+    ]
   }
 ]
