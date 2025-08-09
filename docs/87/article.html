@@ -1,0 +1,101 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <h2 id="what-is-the-blacklist">What Is the Blacklist?</h2>
+      <p>The <strong>Relay Blacklist</strong> is an internal enforcement system that:</p>
+      <ul>
+        <li>Disables non-compliant nodes from routing live streams</li>
+        <li>Blocks ⚡︎dB reward eligibility for those nodes</li>
+        <li>Prevents blacklisted relays from being used in high-priority routes (Echostage, Partner+, Hype Moments)</li>
+      </ul>
+      <p>Being blacklisted <strong>does not ban your NOIZ account</strong>, but it removes your affected node(s) from infrastructure participation until the issue is resolved.</p>
+
+      <h2 id="why-nodes-get-blacklisted">Why Nodes Get Blacklisted</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Violation</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🔻 <strong>Repeated downtime</strong></td>
+            <td>Node frequently goes offline or fails handshake checks</td>
+          </tr>
+          <tr>
+            <td>🚫 <strong>Unauthorized traffic</strong></td>
+            <td>Used to proxy third-party apps or external video sources</td>
+          </tr>
+          <tr>
+            <td>⚠️ <strong>Tampering with relay protocol</strong></td>
+            <td>Modifying routing logic or stream headers to spoof performance</td>
+          </tr>
+          <tr>
+            <td>🧪 <strong>Hosting modified clients</strong></td>
+            <td>Running custom builds not approved or signed by NOIZ</td>
+          </tr>
+          <tr>
+            <td>🪧 <strong>Brand misuse</strong></td>
+            <td>Advertising unrelated products or redirecting to off-platform services</td>
+          </tr>
+          <tr>
+            <td>🕵️ <strong>Logging or inspecting content</strong></td>
+            <td>Attempting to store, decode, or analyze encrypted stream payloads</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="detection-auto-blacklisting">Detection &amp; Auto-Blacklisting</h2>
+      <p>NOIZ automatically flags nodes for:</p>
+      <ul>
+        <li>Failing multiple relay integrity checks</li>
+        <li>Excessive packet loss or corrupted stream segments</li>
+        <li>Mismatched or expired authentication tokens</li>
+        <li>Rapid, unexplained region-switching</li>
+      </ul>
+      <p>If a node triggers <strong>3+ consecutive violations</strong>, it may be automatically blacklisted without manual review.</p>
+
+      <h2 id="manual-review-appeals">Manual Review &amp; Appeals</h2>
+      <p>If your node is blacklisted, you will:</p>
+      <ul>
+        <li>Receive a dashboard alert and email notice</li>
+        <li>Be able to submit an appeal at: <strong>Dashboard → Relay Settings → Appeal Blacklist</strong></li>
+      </ul>
+      <p>Appeal submissions should include:</p>
+      <ul>
+        <li>A brief explanation of the issue</li>
+        <li>Relevant uptime or monitoring logs</li>
+        <li>Configuration details (OS, version, host)</li>
+      </ul>
+      <p>Staff will review within <strong>3–5 business days</strong>. If approved, your node will be reinstated in <strong>probation mode</strong> for 14 days. ⚠️ Rewards only resume after successfully passing probation.</p>
+
+      <h2 id="permanent-exclusion">Permanent Exclusion</h2>
+      <p>Nodes may be permanently blocked if they are:</p>
+      <ul>
+        <li>Found intentionally hijacking or redirecting viewer sessions</li>
+        <li>Used to advertise scams, crypto services, or gambling</li>
+        <li>In violation of NOIZ data integrity standards (logging IPs, packet inspection)</li>
+        <li>Linked to repeated alt-account abuse</li>
+      </ul>
+      <p>Permanent blacklists are applied per-node <strong>fingerprint</strong>, not just IP address.</p>
+
+      <h2 id="how-to-avoid-blacklisting">How to Avoid Blacklisting</h2>
+      <ul>
+        <li>✅ Keep your relay software up to date</li>
+        <li>✅ Use only official NOIZ-distributed binaries</li>
+        <li>✅ Do not modify routing or protocol flags</li>
+        <li>✅ Maintain stable bandwidth in your assigned region</li>
+        <li>✅ Avoid VPS hosts with high churn or shared networking</li>
+      </ul>
+
+      <h2 id="faq">FAQ</h2>
+      <ul>
+        <li><strong>Can I reapply with a different node?</strong> → Yes, unless your account or fingerprint is flagged for malicious activity</li>
+        <li><strong>Can I appeal a permanent blacklist?</strong> → Only once, and only with new supporting evidence</li>
+        <li><strong>Can I see if I’m on probation?</strong> → Yes — your dashboard shows status and any active warnings</li>
+        <li><strong>Can I check my blacklist score?</strong> → Not directly, but you can review warning logs in the Node Log dashboard</li>
+      </ul>
+    </article>
+  </div>
+</div>
