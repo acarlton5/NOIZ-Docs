@@ -939,5 +939,15 @@
       "plugins",
       "sdk"
     ]
+  },
+  {
+    "documentId": 93,
+    "title": "Plugin Marketplace Submission & Approval Process",
+    "desccription": "How developers submit plugins to the NOIZ Marketplace and how moderation works.",
+    "tags": [
+      "developer",
+      "plugins",
+      "marketplace"
+    ]
   }
 ]
