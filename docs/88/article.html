@@ -1,0 +1,84 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <h2 id="why-node-scaling-matters">Why Node Scaling Matters</h2>
+      <p>As NOIZ’s audience and streamer base grow:</p>
+      <ul>
+        <li>Viewer load increases</li>
+        <li>Regional demand shifts</li>
+        <li>High-traffic events (like Echostage features or Partner+ launches) push infrastructure limits</li>
+      </ul>
+      <p>The relay node network must scale to:</p>
+      <ul>
+        <li>Keep latency low</li>
+        <li>Balance stream routing</li>
+        <li>Avoid overloading internal routes</li>
+      </ul>
+      <p>Pathweaver nodes help expand regional capacity and reduce strain on core infrastructure.</p>
+
+      <h2 id="how-noiz-grows-its-network">How NOIZ Grows Its Network</h2>
+      <p>NOIZ uses a <strong>controlled scale-out model</strong>, adding new nodes based on:</p>
+      <ul>
+        <li>Viewer traffic heatmaps</li>
+        <li>Partner streamer growth</li>
+        <li>Quest campaign targeting</li>
+        <li>Node health and redundancy scoring</li>
+      </ul>
+      <p>Rather than running an oversized static server farm, NOIZ leverages <strong>a managed community relay mesh</strong> to adapt capacity to real-world demand while maintaining platform oversight.</p>
+
+      <h2 id="the-network-map-public-private">The Network Map (Public + Private)</h2>
+      <p><strong>🔓 Public Node Map</strong></p>
+      <ul>
+        <li>Shows approved Pathweaver locations (if not anonymous)</li>
+        <li>Color-coded by status and tier</li>
+        <li>Updated every 24 hours</li>
+        <li>Accessible via:<br>
+          <code>noiz.live/network-map</code>
+        </li>
+      </ul>
+      <p><strong>🔐 Private Infra Map</strong></p>
+      <ul>
+        <li>Internal NOIZ routing and assignment tool</li>
+        <li>Tracks uptime history, relay health score, fallback paths</li>
+        <li>Not publicly visible to protect stream routing integrity</li>
+      </ul>
+
+      <h2 id="node-prioritization-logic">Node Prioritization Logic</h2>
+      <p>When a streamer goes live, NOIZ assigns relays using:</p>
+      <ul>
+        <li>Proximity to streamer and viewers</li>
+        <li>Current latency scores</li>
+        <li>Relay health history</li>
+        <li>Event context (e.g., Echostage features, high-demand campaigns)</li>
+      </ul>
+      <p>Nodes with consistent high health scores and uptime are routed more often — leading to higher ⚡︎dB rewards from the internal Pathweaver support pool.</p>
+
+      <h2 id="scaling-tactics">Scaling Tactics</h2>
+      <p>To maintain balance and stability, NOIZ:</p>
+      <ul>
+        <li>Enforces per-node stream limits for load balancing</li>
+        <li>Distributes traffic with multi-hop paths if required</li>
+        <li>Prioritizes underrepresented regions for new capacity</li>
+        <li>Uses platform-owned overflow relays for emergencies</li>
+      </ul>
+      <p>Messages like <em>“stream rerouting due to congestion”</em> appear only under exceptional conditions — the relay system automatically self-heals during standard load changes.</p>
+
+      <h2 id="how-pathweavers-can-help">How Pathweavers Can Help</h2>
+      <p>If you’re adding or expanding relay capacity:</p>
+      <ul>
+        <li>Host in regions with low node density (shown on Public Map)</li>
+        <li>Maintain stable bandwidth and uptime</li>
+        <li>Check your relay performance dashboard to identify issues early</li>
+        <li>Consider upgrading bandwidth (vertical scaling) before adding multiple new nodes (horizontal scaling)</li>
+      </ul>
+
+      <h2 id="faq">FAQ</h2>
+      <ul>
+        <li><strong>Do I need approval to start a node?</strong> → No, but higher routing tiers require proven stability.</li>
+        <li><strong>Can I see my rank?</strong> → Yes — view in <em>My Node → Node Score</em>.</li>
+        <li><strong>Does my node always serve my region?</strong> → Not always — routing adapts to demand and latency.</li>
+        <li><strong>Is this a decentralized network?</strong> → No — it’s a managed support mesh under NOIZ’s policy and technical control.</li>
+      </ul>
+    </article>
+  </div>
+</div>
