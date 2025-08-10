@@ -979,5 +979,15 @@
       "monetization",
       "tiers"
     ]
+  },
+  {
+    "documentId": 97,
+    "title": "Developing Interactive Plugins for NOIZ",
+    "desccription": "Guide to building interactive plugins that respond to viewer input, ⚡︎dB actions, and stream events.",
+    "tags": [
+      "developer",
+      "plugins",
+      "interactive"
+    ]
   }
 ]
