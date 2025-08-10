@@ -19,7 +19,7 @@
 
       <h2 id="2-typical-plugin-use-cases">2. Typical Plugin Use Cases</h2>
       <ul>
-        <li>⚡︎dB-triggered reactions (e.g., chat rain, explosions)</li>
+        <li>⚡︎dB-triggered reactions (e.g. chat rain, explosion)</li>
         <li>Stream polls or real-time voting widgets</li>
         <li>Milestone or Quest completion trackers</li>
         <li>Timer-based minigames or randomizers</li>
@@ -64,12 +64,14 @@
         </li>
       </ol>
 
+
       <h2 id="4-essential-sdk-hooks">4. Essential SDK Hooks</h2>
       <table>
         <thead>
           <tr><th>Hook</th><th>Description</th></tr>
         </thead>
         <tbody>
+      <p>Every plugin must declare what hooks it uses in its manifest.</p>
           <tr><td><code>onTip</code></td><td>Fires when a viewer sends ⚡︎dB directly or via Sub</td></tr>
           <tr><td><code>onQuestComplete</code></td><td>Fires when a viewer completes a stream-linked Quest</td></tr>
           <tr><td><code>onKeyword</code></td><td>Fires when a chat message matches the plugin’s keyword trigger</td></tr>
@@ -92,37 +94,38 @@
       <p><strong>❌ Don’t:</strong></p>
       <ul>
         <li>Auto-play sound or video on load</li>
-        <li>Simulate events (e.g., fake “you got a sub!”)</li>
+        <li>Simulate events (e.g. fake “you got a sub!”)</li>
         <li>Manipulate chat logs or impersonate mods/staff</li>
         <li>Store or transmit viewer data outside NOIZ</li>
       </ul>
 
       <h2 id="6-testing-tools">6. Testing Tools</h2>
-      <p>The <strong>Plugin Sandbox</strong> tool lets you:</p>
+      <p>Use the <strong>Plugin Sandbox</strong> tool to:</p>
       <ul>
         <li>Emulate chat triggers</li>
-        <li>Simulate ⚡︎dB actions</li>
+        <li>Simulate ⚡︎dB transactions</li>
         <li>Test multiple viewer identities</li>
-        <li>Switch stream states (offline → live → featured)</li>
+        <li>Switch stream states (e.g. offline → live → featured)</li>
       </ul>
-      <p>If your plugin passes <strong>sandbox testing</strong> and <strong>visual review</strong>, it’s ready for submission.</p>
+      <p>If your plugin passes <strong>sandbox</strong> and <strong>visual review</strong>, you’re ready to submit.</p>
 
       <h2 id="7-optimization-performance">7. Optimization &amp; Performance</h2>
       <p>Keep assets:</p>
       <ul>
         <li><strong>Under 5MB</strong> for overlay bundles</li>
         <li><strong>Async-loaded</strong> where possible</li>
-        <li><strong>Responsive</strong> from 720p to 4K viewports</li>
-        <li><strong>Compliant</strong> with sandbox and security rules</li>
+
+        <li><strong>Responsive</strong> to 720p–4K viewports</li>
+        <li><strong>Compliant</strong> with security policy (sandboxed only)</li>
       </ul>
-      <p>⚠️ Memory-heavy or slow plugins may be rejected, throttled, or unlisted until optimized.</p>
+      <p>⚠️ Memory-heavy or slow plugins will be rejected or throttled.</p>
 
       <h2 id="8-faq">8. FAQ</h2>
-      <p><strong>Can I reuse Twitch or Kick plugin code?</strong> → Only if fully rewritten for NOIZ standards.</p>
-      <p><strong>Can I build audio-only tools?</strong> → Yes — must include volume controls.</p>
-      <p><strong>Can I partner with artists?</strong> → Absolutely — combining visuals + interactivity is encouraged.</p>
-      <p><strong>Can I test with real ⚡︎dB?</strong> → Test mode uses simulated ⚡︎dB; real usage requires streamer installation.</p>
-      <p><strong>Can my plugin store viewer data?</strong> → No — stateless design only, unless using platform-native inventories.</p>
+      <p><strong>Can I reuse Twitch or Kick plugin code?</strong> → Only if fully rewritten for NOIZ standards</p>
+      <p><strong>Can I build audio-only tools?</strong> → Yes — audio plugins are supported, but must include volume controls</p>
+      <p><strong>Can I partner with artists?</strong> → Absolutely — combine visuals + interactivity for maximum value</p>
+      <p><strong>Can I test with real ⚡︎dB?</strong> → Test mode offers simulated ⚡︎dB — real usage requires streamer installation</p>
+      <p><strong>Can my plugin store viewer data?</strong> → Plugins may temporarily cache viewer data <strong>only through NOIZ’s platform-native systems</strong> and <strong>never send or sync it externally</strong>. All data must remain session-scoped or stored in NOIZ-managed storage — <strong>no external communication, servers, or APIs are allowed</strong>.</p>
     </article>
   </div>
 </div>

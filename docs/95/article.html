@@ -24,7 +24,7 @@
         <li>Use only the <strong>NOIZ-provided SDK APIs</strong></li>
         <li>Avoid accessing browser internals (DOM, cookies, storage, etc.)</li>
         <li>Fail gracefully if a hook or API is unavailable</li>
-        <li>Avoid creating persistent outbound connections unless <strong>pre-approved</strong></li>
+        <li>Never communicate with external servers or APIs</li>
       </ul>
       <p>Plugins must <strong>not</strong>:</p>
       <ul>
@@ -46,6 +46,7 @@
       <ul>
         <li>Voluntary</li>
         <li>Session-scoped only (no persistent tracking)</li>
+        <li>Cached only through NOIZ-managed systems — no external sync or communication</li>
       </ul>
       <h2 id="4-db-trigger-safeguards">4. ⚡︎dB Trigger Safeguards</h2>
       <p>If your plugin uses ⚡︎dB for triggers or effects:</p>
@@ -97,7 +98,7 @@
       </ul>
       <h2 id="8-faq">8. FAQ</h2>
       <p><strong>Can I use third-party audio libraries?</strong> → Yes, if fully licensed and free of tracking components.</p>
-      <p><strong>Can I store user settings between sessions?</strong> → Only through NOIZ-approved config APIs.</p>
+      <p><strong>Can I store user settings between sessions?</strong> → Only through NOIZ-approved config APIs. Plugins may temporarily cache viewer data through NOIZ-managed storage and must never send or sync it externally.</p>
       <p><strong>Can my plugin connect to outside websites?</strong> → Only with prior approval (e.g., for dynamic assets).</p>
       <p><strong>Can I monetize a plugin with crypto?</strong> → No — all monetization must use ⚡︎dB inside NOIZ.</p>
       <p><strong>What happens if I break these rules?</strong> → Plugin removal, Developer badge loss, and/or account action.</p>
