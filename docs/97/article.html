@@ -1,0 +1,118 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <h2 id="1-what-is-an-interactive-plugin">1. What Is an Interactive Plugin?</h2>
+      <p>An interactive plugin is any tool that responds to or triggers:</p>
+      <ul>
+        <li>Viewer input (chat, clicks, reactions)</li>
+        <li>⚡︎dB support actions (subs, cheers, quest completions)</li>
+        <li>Stream state (live/on break, featured, partner status)</li>
+        <li>Inventory unlocks or milestone events</li>
+      </ul>
+      <p>Plugins enhance the stream experience and can appear:</p>
+      <ul>
+        <li>As overlays</li>
+        <li>In chat</li>
+        <li>Inside viewer sidebars</li>
+        <li>Tied to Quest UIs or boost moments</li>
+      </ul>
+
+      <h2 id="2-typical-plugin-use-cases">2. Typical Plugin Use Cases</h2>
+      <ul>
+        <li>⚡︎dB-triggered reactions (e.g. chat rain, explosion)</li>
+        <li>Stream polls or real-time voting widgets</li>
+        <li>Milestone or Quest completion trackers</li>
+        <li>Timer-based minigames or randomizers</li>
+        <li>Viewer name highlight effects</li>
+        <li>Collaborative goal bars (e.g. “raise 5k ⚡︎dB”)</li>
+      </ul>
+      <p>If it engages the audience, you can build it.</p>
+
+      <h2 id="3-plugin-development-flow">3. Plugin Development Flow</h2>
+      <p><strong>Plan the interaction</strong></p>
+      <ul>
+        <li>What triggers it?</li>
+        <li>What does it display or do?</li>
+        <li>Does it need ⚡︎dB, chat, or viewer input?</li>
+      </ul>
+      <p><strong>Use the Plugin SDK Template</strong></p>
+      <ul>
+        <li>Fork or download the boilerplate</li>
+        <li>Customize manifest with trigger types, visuals, cooldowns</li>
+        <li>Hook into SDK events (e.g. <code>onSub</code>, <code>onQuestComplete</code>)</li>
+      </ul>
+      <p><strong>Preview and Test</strong></p>
+      <ul>
+        <li>Test in NOIZ’s local sandbox</li>
+        <li>Simulate events using mock viewer data</li>
+        <li>Optimize layout for both desktop and mobile viewers</li>
+      </ul>
+      <p><strong>Submit for Approval</strong></p>
+      <ul>
+        <li>Add metadata and preview images</li>
+        <li>Choose pricing (free or ⚡︎dB unlock)</li>
+        <li>Submit via <strong>Developer → Submit Plugin</strong></li>
+      </ul>
+
+      <h2 id="4-essential-sdk-hooks">4. Essential SDK Hooks</h2>
+      <table>
+        <thead>
+          <tr><th>Hook</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>onTip</code></td><td>Viewer sends ⚡︎dB manually or via Sub</td></tr>
+          <tr><td><code>onQuestComplete</code></td><td>Viewer completes a stream-linked Quest</td></tr>
+          <tr><td><code>onKeyword</code></td><td>Triggers when a chat message matches input</td></tr>
+          <tr><td><code>triggerOverlay()</code></td><td>Renders an overlay element (animation or HTML)</td></tr>
+          <tr><td><code>playSound()</code></td><td>Triggers plugin-approved audio cue</td></tr>
+          <tr><td><code>setCooldown()</code></td><td>Disables repeated spam (per viewer or global)</td></tr>
+        </tbody>
+      </table>
+      <p>Every plugin must declare what hooks it uses in its manifest.</p>
+
+      <h2 id="5-plugin-design-best-practices">5. Plugin Design Best Practices</h2>
+      <p><strong>✅ Do:</strong></p>
+      <ul>
+        <li>Design for minimal input latency</li>
+        <li>Support chat-safe animations</li>
+        <li>Provide mobile-friendly scaling</li>
+        <li>Offer customization for streamers (color, text, placement)</li>
+        <li>Respect viewer input and never auto-trigger without action</li>
+      </ul>
+      <p><strong>❌ Don’t:</strong></p>
+      <ul>
+        <li>Auto-play sound or video on load</li>
+        <li>Simulate events (e.g. fake “you got a sub!”)</li>
+        <li>Manipulate chat logs or impersonate mods/staff</li>
+        <li>Store or transmit viewer data outside NOIZ</li>
+      </ul>
+
+      <h2 id="6-testing-tools">6. Testing Tools</h2>
+      <p>Use the <strong>Plugin Sandbox</strong> tool to:</p>
+      <ul>
+        <li>Emulate chat triggers</li>
+        <li>Simulate ⚡︎dB transactions</li>
+        <li>Test multiple viewer identities</li>
+        <li>Switch stream states (e.g. offline → live → featured)</li>
+      </ul>
+      <p>If your plugin passes <strong>sandbox</strong> and <strong>visual review</strong>, you’re ready to submit.</p>
+
+      <h2 id="7-optimization-performance">7. Optimization &amp; Performance</h2>
+      <p>Keep assets:</p>
+      <ul>
+        <li><strong>Under 5MB</strong> for overlay bundles</li>
+        <li><strong>Async-loaded</strong> where possible</li>
+        <li><strong>Responsive</strong> to 720p–4K viewports</li>
+        <li><strong>Compliant</strong> with security policy (sandboxed only)</li>
+      </ul>
+      <p>⚠️ Memory-heavy or slow plugins will be rejected or throttled.</p>
+
+      <h2 id="8-faq">8. FAQ</h2>
+      <p><strong>Can I reuse Twitch or Kick plugin code?</strong> → Only if fully rewritten for NOIZ standards</p>
+      <p><strong>Can I build audio-only tools?</strong> → Yes — audio plugins are supported, but must include volume controls</p>
+      <p><strong>Can I partner with artists?</strong> → Absolutely — combine visuals + interactivity for maximum value</p>
+      <p><strong>Can I test with real ⚡︎dB?</strong> → Test mode offers simulated ⚡︎dB — real usage requires streamer installation</p>
+      <p><strong>Can my plugin store viewer data?</strong> → Plugins may temporarily cache viewer data <strong>only through NOIZ’s platform-native systems</strong> and <strong>never send or sync it externally</strong>. All data must remain session-scoped or stored in NOIZ-managed storage — <strong>no external communication, servers, or APIs are allowed</strong>.</p>
+    </article>
+  </div>
+</div>
