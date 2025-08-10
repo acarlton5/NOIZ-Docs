@@ -2,12 +2,12 @@
   <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
     <article class="content prose max-w-full px-0 py-0">
       <h2 id="1-what-is-an-interactive-plugin">1. What Is an Interactive Plugin?</h2>
-      <p>An interactive plugin is any tool that responds to or triggers:</p>
+      <p>An <strong>interactive plugin</strong> is any tool that responds to or triggers:</p>
       <ul>
-        <li>Viewer input (chat, clicks, reactions)</li>
-        <li>⚡︎dB support actions (subs, cheers, quest completions)</li>
-        <li>Stream state (live/on break, featured, partner status)</li>
-        <li>Inventory unlocks or milestone events</li>
+        <li><strong>Viewer input</strong> (chat messages, clicks, reactions)</li>
+        <li><strong>⚡︎dB support actions</strong> (subs, cheers, quest completions)</li>
+        <li><strong>Stream state</strong> (live/on break, featured, Partner status)</li>
+        <li><strong>Inventory unlocks</strong> or <strong>milestone events</strong></li>
       </ul>
       <p>Plugins enhance the stream experience and can appear:</p>
       <ul>
@@ -24,35 +24,46 @@
         <li>Milestone or Quest completion trackers</li>
         <li>Timer-based minigames or randomizers</li>
         <li>Viewer name highlight effects</li>
-        <li>Collaborative goal bars (e.g. “raise 5k ⚡︎dB”)</li>
+        <li>Collaborative goal bars (e.g., “raise 5k ⚡︎dB”)</li>
       </ul>
-      <p>If it engages the audience, you can build it.</p>
+      <p>If it <strong>engages the audience</strong>, you can build it.</p>
 
       <h2 id="3-plugin-development-flow">3. Plugin Development Flow</h2>
-      <p><strong>Plan the interaction</strong></p>
-      <ul>
-        <li>What triggers it?</li>
-        <li>What does it display or do?</li>
-        <li>Does it need ⚡︎dB, chat, or viewer input?</li>
-      </ul>
-      <p><strong>Use the Plugin SDK Template</strong></p>
-      <ul>
-        <li>Fork or download the boilerplate</li>
-        <li>Customize manifest with trigger types, visuals, cooldowns</li>
-        <li>Hook into SDK events (e.g. <code>onSub</code>, <code>onQuestComplete</code>)</li>
-      </ul>
-      <p><strong>Preview and Test</strong></p>
-      <ul>
-        <li>Test in NOIZ’s local sandbox</li>
-        <li>Simulate events using mock viewer data</li>
-        <li>Optimize layout for both desktop and mobile viewers</li>
-      </ul>
-      <p><strong>Submit for Approval</strong></p>
-      <ul>
-        <li>Add metadata and preview images</li>
-        <li>Choose pricing (free or ⚡︎dB unlock)</li>
-        <li>Submit via <strong>Developer → Submit Plugin</strong></li>
-      </ul>
+      <ol>
+        <li>
+          <p><strong>Plan the interaction</strong></p>
+          <ul>
+            <li>What triggers it?</li>
+            <li>What does it display or do?</li>
+            <li>Does it require ⚡︎dB, chat, or viewer input?</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Use the Plugin SDK Template</strong></p>
+          <ul>
+            <li>Fork or download the boilerplate</li>
+            <li>Customize the manifest with trigger types, visuals, cooldowns</li>
+            <li>Hook into SDK events (e.g., <code>onSub</code>, <code>onQuestComplete</code>)</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Preview &amp; Test</strong></p>
+          <ul>
+            <li>Use NOIZ’s local sandbox</li>
+            <li>Simulate events using mock viewer data</li>
+            <li>Optimize for both desktop and mobile viewers</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Submit for Approval</strong></p>
+          <ul>
+            <li>Add metadata and preview images</li>
+            <li>Set unlock type (free or ⚡︎dB unlock)</li>
+            <li>Submit via <strong>Developer → Submit Plugin</strong></li>
+          </ul>
+        </li>
+      </ol>
+
 
       <h2 id="4-essential-sdk-hooks">4. Essential SDK Hooks</h2>
       <table>
@@ -60,24 +71,25 @@
           <tr><th>Hook</th><th>Description</th></tr>
         </thead>
         <tbody>
-          <tr><td><code>onTip</code></td><td>Viewer sends ⚡︎dB manually or via Sub</td></tr>
-          <tr><td><code>onQuestComplete</code></td><td>Viewer completes a stream-linked Quest</td></tr>
-          <tr><td><code>onKeyword</code></td><td>Triggers when a chat message matches input</td></tr>
+      <p>Every plugin must declare what hooks it uses in its manifest.</p>
+          <tr><td><code>onTip</code></td><td>Fires when a viewer sends ⚡︎dB directly or via Sub</td></tr>
+          <tr><td><code>onQuestComplete</code></td><td>Fires when a viewer completes a stream-linked Quest</td></tr>
+          <tr><td><code>onKeyword</code></td><td>Fires when a chat message matches the plugin’s keyword trigger</td></tr>
           <tr><td><code>triggerOverlay()</code></td><td>Renders an overlay element (animation or HTML)</td></tr>
-          <tr><td><code>playSound()</code></td><td>Triggers plugin-approved audio cue</td></tr>
-          <tr><td><code>setCooldown()</code></td><td>Disables repeated spam (per viewer or global)</td></tr>
+          <tr><td><code>playSound()</code></td><td>Plays a plugin-approved audio cue</td></tr>
+          <tr><td><code>setCooldown()</code></td><td>Prevents repeated spam (per viewer or global)</td></tr>
         </tbody>
       </table>
-      <p>Every plugin must declare what hooks it uses in its manifest.</p>
+      <p><strong>Every plugin must declare all hooks it uses in its manifest.</strong></p>
 
       <h2 id="5-plugin-design-best-practices">5. Plugin Design Best Practices</h2>
       <p><strong>✅ Do:</strong></p>
       <ul>
-        <li>Design for minimal input latency</li>
+        <li>Minimize input latency</li>
         <li>Support chat-safe animations</li>
         <li>Provide mobile-friendly scaling</li>
-        <li>Offer customization for streamers (color, text, placement)</li>
-        <li>Respect viewer input and never auto-trigger without action</li>
+        <li>Offer streamer customization (color, text, placement)</li>
+        <li>Only trigger effects when initiated by a viewer or streamer</li>
       </ul>
       <p><strong>❌ Don’t:</strong></p>
       <ul>
@@ -102,6 +114,7 @@
       <ul>
         <li><strong>Under 5MB</strong> for overlay bundles</li>
         <li><strong>Async-loaded</strong> where possible</li>
+
         <li><strong>Responsive</strong> to 720p–4K viewports</li>
         <li><strong>Compliant</strong> with security policy (sandboxed only)</li>
       </ul>
