@@ -1,0 +1,128 @@
+<div class="lg:w-[calc(100%-380px)] lg:border-l lg:border-l-border lg:pl-0 2xl:w-[calc(100%-380px-350px)] 2xl:pr-0 2xl:border-r 2xl:border-r-border">
+  <div class="max-w-full px-0 pt-7 lg:pt-10 lg:pl-[46px] 2xl:pr-[46px]">
+    <article class="content prose max-w-full px-0 py-0">
+      <h2 id="1-what-is-an-interactive-plugin">1. What Is an Interactive Plugin?</h2>
+      <p>An <strong>interactive plugin</strong> is any tool that responds to or triggers:</p>
+      <ul>
+        <li><strong>Viewer input</strong> (chat messages, clicks, reactions)</li>
+        <li><strong>⚡︎dB support actions</strong> (subs, cheers, quest completions)</li>
+        <li><strong>Stream state</strong> (live/on break, featured, Partner status)</li>
+        <li><strong>Inventory unlocks</strong> or <strong>milestone events</strong></li>
+      </ul>
+      <p>Plugins enhance the stream experience and can appear:</p>
+      <ul>
+        <li>As overlays</li>
+        <li>In chat</li>
+        <li>Inside viewer sidebars</li>
+        <li>Tied to Quest UIs or boost moments</li>
+      </ul>
+
+      <h2 id="2-typical-plugin-use-cases">2. Typical Plugin Use Cases</h2>
+      <ul>
+        <li>⚡︎dB-triggered reactions (e.g., chat rain, explosions)</li>
+        <li>Stream polls or real-time voting widgets</li>
+        <li>Milestone or Quest completion trackers</li>
+        <li>Timer-based minigames or randomizers</li>
+        <li>Viewer name highlight effects</li>
+        <li>Collaborative goal bars (e.g., “raise 5k ⚡︎dB”)</li>
+      </ul>
+      <p>If it <strong>engages the audience</strong>, you can build it.</p>
+
+      <h2 id="3-plugin-development-flow">3. Plugin Development Flow</h2>
+      <ol>
+        <li>
+          <p><strong>Plan the interaction</strong></p>
+          <ul>
+            <li>What triggers it?</li>
+            <li>What does it display or do?</li>
+            <li>Does it require ⚡︎dB, chat, or viewer input?</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Use the Plugin SDK Template</strong></p>
+          <ul>
+            <li>Fork or download the boilerplate</li>
+            <li>Customize the manifest with trigger types, visuals, cooldowns</li>
+            <li>Hook into SDK events (e.g., <code>onSub</code>, <code>onQuestComplete</code>)</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Preview &amp; Test</strong></p>
+          <ul>
+            <li>Use NOIZ’s local sandbox</li>
+            <li>Simulate events using mock viewer data</li>
+            <li>Optimize for both desktop and mobile viewers</li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Submit for Approval</strong></p>
+          <ul>
+            <li>Add metadata and preview images</li>
+            <li>Set unlock type (free or ⚡︎dB unlock)</li>
+            <li>Submit via <strong>Developer → Submit Plugin</strong></li>
+          </ul>
+        </li>
+      </ol>
+
+      <h2 id="4-essential-sdk-hooks">4. Essential SDK Hooks</h2>
+      <table>
+        <thead>
+          <tr><th>Hook</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>onTip</code></td><td>Fires when a viewer sends ⚡︎dB directly or via Sub</td></tr>
+          <tr><td><code>onQuestComplete</code></td><td>Fires when a viewer completes a stream-linked Quest</td></tr>
+          <tr><td><code>onKeyword</code></td><td>Fires when a chat message matches the plugin’s keyword trigger</td></tr>
+          <tr><td><code>triggerOverlay()</code></td><td>Renders an overlay element (animation or HTML)</td></tr>
+          <tr><td><code>playSound()</code></td><td>Plays a plugin-approved audio cue</td></tr>
+          <tr><td><code>setCooldown()</code></td><td>Prevents repeated spam (per viewer or global)</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Every plugin must declare all hooks it uses in its manifest.</strong></p>
+
+      <h2 id="5-plugin-design-best-practices">5. Plugin Design Best Practices</h2>
+      <p><strong>✅ Do:</strong></p>
+      <ul>
+        <li>Minimize input latency</li>
+        <li>Support chat-safe animations</li>
+        <li>Provide mobile-friendly scaling</li>
+        <li>Offer streamer customization (color, text, placement)</li>
+        <li>Only trigger effects when initiated by a viewer or streamer</li>
+      </ul>
+      <p><strong>❌ Don’t:</strong></p>
+      <ul>
+        <li>Auto-play sound or video on load</li>
+        <li>Simulate events (e.g., fake “you got a sub!”)</li>
+        <li>Manipulate chat logs or impersonate mods/staff</li>
+        <li>Store or transmit viewer data outside NOIZ</li>
+      </ul>
+
+      <h2 id="6-testing-tools">6. Testing Tools</h2>
+      <p>The <strong>Plugin Sandbox</strong> tool lets you:</p>
+      <ul>
+        <li>Emulate chat triggers</li>
+        <li>Simulate ⚡︎dB actions</li>
+        <li>Test multiple viewer identities</li>
+        <li>Switch stream states (offline → live → featured)</li>
+      </ul>
+      <p>If your plugin passes <strong>sandbox testing</strong> and <strong>visual review</strong>, it’s ready for submission.</p>
+
+      <h2 id="7-optimization-performance">7. Optimization &amp; Performance</h2>
+      <p>Keep assets:</p>
+      <ul>
+        <li><strong>Under 5MB</strong> for overlay bundles</li>
+        <li><strong>Async-loaded</strong> where possible</li>
+        <li><strong>Responsive</strong> from 720p to 4K viewports</li>
+        <li><strong>Compliant</strong> with sandbox and security rules</li>
+      </ul>
+      <p>⚠️ Memory-heavy or slow plugins may be rejected, throttled, or unlisted until optimized.</p>
+
+      <h2 id="8-faq">8. FAQ</h2>
+      <p><strong>Can I reuse Twitch or Kick plugin code?</strong> → Only if fully rewritten for NOIZ standards.</p>
+      <p><strong>Can I build audio-only tools?</strong> → Yes — must include volume controls.</p>
+      <p><strong>Can I partner with artists?</strong> → Absolutely — combining visuals + interactivity is encouraged.</p>
+      <p><strong>Can I test with real ⚡︎dB?</strong> → Test mode uses simulated ⚡︎dB; real usage requires streamer installation.</p>
+      <p><strong>Can my plugin store viewer data?</strong> → No — stateless design only, unless using platform-native inventories.</p>
+    </article>
+  </div>
+</div>
